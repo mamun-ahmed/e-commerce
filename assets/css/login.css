@@ -1,6 +1,15 @@
 html,body, .fullHeight{
     height: 100%!important;
+    position: relative;
 }
+
+.header{
+    margin-left: 4rem;
+    position: absolute;
+}
+
+/*Login Page*/
+
 .loginMainArea{
     display: flex;
     align-items: center;
@@ -14,16 +23,23 @@ html,body, .fullHeight{
 .loginBodyBg{
     background-image: url('../images/login_bg_img.jpg');
 }
+.headTitle{font-size: 30px;}
+.submitBtn{
+    text-transform: uppercase;
+}
+
+/*SignUp Page*/
+
 .signUpBodyBg{
     background-image: url('../images/signup_bg_img.jpg');
     background-size: 50% 100%;
 }
 
-/*------------------------------------------------------------------------------*/
-/*                    Width : 1300px
-/*------------------------------------------------------------------------------*/
-@media only screen and (max-width: 1200px){
-    html, .signUpPagebody, .signUpPage .fullHeight{
-        height: auto!important;
-    }
+/*Forgot Pass Page */
+
+.loginBodyContent h5{
+    line-height: 22px;
+    font-weight: 600;
 }
+
+
