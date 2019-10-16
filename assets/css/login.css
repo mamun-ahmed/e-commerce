@@ -1,0 +1,29 @@
+html,body, .fullHeight{
+    height: 100%!important;
+}
+.loginMainArea{
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+.bgImage{
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+}
+.loginBodyBg{
+    background-image: url('../images/login_bg_img.jpg');
+}
+.signUpBodyBg{
+    background-image: url('../images/signup_bg_img.jpg');
+    background-size: 50% 100%;
+}
+
+/*------------------------------------------------------------------------------*/
+/*                    Width : 1300px
+/*------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1200px){
+    html, .signUpPagebody, .signUpPage .fullHeight{
+        height: auto!important;
+    }
+}
