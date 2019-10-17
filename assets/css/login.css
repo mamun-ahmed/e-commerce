@@ -35,6 +35,38 @@ html,body, .fullHeight{
     background-size: 50% 100%;
 }
 
+/*Social List*/
+
+.socialList {
+    display: flex;
+    flex-flow: row wrap;
+}
+.socialList li a{
+    border: 1px solid #464646;
+    padding: 6px 19px;
+    margin-right: 10px;
+    -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 22px;
+}
+.socialList li:last-child a{margin-right: 0;}
+.socialList .facebook a{color: #3b5998;}
+.socialList .googlePlus a{color: #da4b42;}
+
+/*Forget Pass*/
+.formWrapper .linkText{
+    color: #3897cf;
+    text-decoration: underline!important;
+    display: block;
+    font-size: 17px;
+    font-weight: 700;
+}
+.formWrapper p .linkText{display: initial;}
+
 /*Forgot Pass Page */
 
 .loginBodyContent h5{

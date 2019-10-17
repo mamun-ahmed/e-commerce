@@ -4,6 +4,7 @@
 
 /*CSs File Import */
 @import url('bootstrap.min.css');
+@import url('owl.carousel.min.css');
 
 /*FontAwesome */
 @import url('../fonts/fontawesome/css/fontawesome.min.css');
@@ -154,7 +155,7 @@ p {
 	line-height: 25px;
 	font-family: 'Crimson Text', serif;
 	color: #404041;
-	font-weight: 400;
+	font-weight: 600;
 }
 p:last-child {margin-bottom: 0px;}
 p:before {width: 30px;display: inline-block;}
@@ -217,7 +218,10 @@ input[type="button"],
 	font-size: 14px;
 	min-height: 40px;
 	line-height: 40px;
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
 }
+button:focus{outline: unset;}
 .btn i{font-size: 0.7rem;padding-right: 5px;}
 .btn:hover {
     transform: translateY(-1px);
@@ -287,6 +291,22 @@ a:hover {color: inherit;}
 	clear: both;
 }
 
+/* --- sectionGap --------------------- */
+.secGap{padding-top:3rem;padding-bottom: 5rem;}
+
+/* --- Bg Image --------------------- */
+.bgImage{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bgImg01{background-image: url('../images/bg_img_01.jpg');}
+/* --- Bg Color --------------------- */
+.bgGray{background-color: #f6f6f6;}
+.bgBlack{background-color: #333333;}
+
+
 /*Logo Text*/
 .logoText a{font-size: 30px;}
 .logoText a:hover{color: #3897cf;}
@@ -352,34 +372,150 @@ textarea::before {
 	bottom: 0;
 	z-index: 100;
 }
-/*Social List*/
+/*Home Page*/
 
-.socialList {
+.headFeature{
+	color: #ffffff;
+	font-size: 15px;
+	line-height: 40px;
+	font-family: 'Crimson Text', serif;
+}
+.headFeature i{font-size: 12px;padding-right: 5px;}
+
+/*Heder*/
+.header{border-bottom: 1px solid #dcdcdc;min-height: 60px;}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+	color: #363636;
+	font-size: 16px;
+	font-family: 'Crimson Text', serif;
+	font-weight: 600;
+}
+.navbar-expand-lg .navbar-nav .active .nav-link, 
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+	color:#3897cf;
+}
+.headPopBarList li a{
+	color:#363636;
+	font-size: 16px;
+}
+.headPopBarList li a i{font-size: 12px;padding-right: 5px;}
+
+/*Footer*/
+.footerLogo .logoText{line-height: 25px;}
+.footerWidgetHeader{
+	font-size: 25px;
+	margin-bottom: 1rem;
+}
+.footerLinksList{
+	display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
 }
-.socialList li a{
-    border: 1px solid #464646;
-    padding: 6px 19px;
-    margin-right: 10px;
-    -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  font-size: 22px;
+.footerLinksList li{
+	max-width: 50%;
+	width: 50%;
+	margin-bottom: 0.5rem;
 }
-.socialList li:last-child a{margin-right: 0;}
-.facebook a{color: #3b5998;}
-.googlePlus a{color: #da4b42;}
+.footerLinksList li a{
+	color:#404041;
+	font-size: 18px;
+	font-weight: 600;
+}
+.footerLinksList li a:hover{
+	color: #3897cf;
+	margin-left: 5px;
+}
+.getInTouchList li{
+	margin-bottom: 0.5rem;
+}
+.getInTouchList li a, .getInTouchList li p{
+	font-size: 18px;
+	color: #404041;
+	font-weight: 600;
+}
 
-/*Forget Pass*/
-.formWrapper .linkText{
-    color: #3897cf;
-    text-decoration: underline!important;
-    display: block;
-    font-size: 17px;
-    font-weight: 700;
+.footerSocial{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
-.formWrapper p .linkText{display: initial;}
+.footerSocial li a{
+	color: rgba(0, 0, 0, 0.5);
+	border: 1px solid #333333;
+    margin-right: 10px;
+	padding: 5px;
+    width: 35px;
+    height: 35px;
+    display: block;
+    text-align: center;
+}
+.footerSocial li:last-child a{margin-right: 0px;}
+.footerSocial li a:hover{
+	color: #3897cf;
+	border:2px solid #3897cf;
+}
+.copyrights{
+	color: #404041;
+	font-weight: 600;
+}
+
+/*Product Categories Section*/
+
+.productCatCard{padding: 15px;border: 2px solid #000000;border-radius: unset;}
+.productCatTitle{text-transform: uppercase;font-size: 23px;}
+
+/*Our Benifit*/
+
+.sectionTitle{
+	text-transform: uppercase;
+}
+.sectionTitle span{
+	color: #3897cf;
+	text-transform: uppercase;
+}
+.singleFeature .card-body h4{text-transform: uppercase;margin-bottom: 0.5rem;}
+.singleFeature .card-body p{font-size: 15px;line-height: 20px;}
+
+/*Partner*/
+.partnerCarousel .owl-item img{
+	width: auto;
+}
+.partnerCarousel .owl-nav button{
+	position: absolute;
+	top: 0;
+}
+
+.partnerCarousel .owl-nav button.owl-next{
+	right: 0;
+}
+
+.partnerCarousel .owl-nav button.owl-prev{
+	left: 0;
+}
+.partnerCarousel .owl-nav button span{
+	font-size: 40px;
+}
+
+/*Cubscribe Card Section*/
+
+.subscribeCard{
+	padding: 1rem;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.subscribeCard .card-body{
+	border: 5px solid #000000;
+}
+.subscribeForm input{
+	width: 440px;
+	margin-right: 10px;
+	border: 1px solid #000000;
+	background-color: transparent;
+}
