@@ -567,6 +567,7 @@ h2.discountTxt{
 	padding: 15px;
 	/* background-color: #ffffff; */
 	text-align: center;
+	min-height: 250px;
 }
 .productTitle{
 	color: #3897cf;
@@ -606,3 +607,66 @@ h2.discountTxt{
 	color: #ffffff!important;
 	font-size: 14px!important;
 }
+/*Shop Page*/
+
+.breadcrumb-item, .breadcrumb-item a{
+	font-size: 16px;
+	color: #363636;
+}
+.breadcrumb-item a{
+	text-decoration: underline!important;
+}
+.pageTitle, .pageTitle span{
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.pageTitle span{color: #3897cf;}
+.singleFilter label{
+	font-size: 18px;
+	color: #363636;
+	font-weight: 600;
+	margin-right: 10px;
+}
+.filterSelect{
+	font-size: 17px;
+	color: #363636;
+}
+
+.pagination li, .pagination .page-link{
+	font-size:16px;
+	color:#363636;
+	font-weight: 600;
+}
+.pagination .page-link{
+	border:1px solid #000000;
+	border-radius: 5px;
+	padding: 10px 14px 6px 14px;
+}
+
+/*Aside*/
+
+.asideWidget{padding-top: 8rem;}
+.asideTitle{margin-bottom: 30px;}
+.asideBody{padding:1rem;}
+.singleFilterCard{
+	border-bottom:1px solid #d4d4d4;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+}
+.singleFilterCard h5{
+	font-size: 20px;
+	color: #363636;
+	margin-bottom: 15px;
+}
+.filterList li a{
+	font-size: 16px;
+	color: #363636;
+	font-weight: 600;
+	line-height: 30px;
+}
+.filterList li a span{
+	font-size: 14px;
+	color: #888888;
+	padding-left: 10px;
+}
+.filterList li a:hover{color: #3897cf;margin-left: 2px;}
