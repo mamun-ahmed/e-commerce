@@ -1,0 +1,201 @@
+.userAsideBar{
+    height: 100vh;
+}
+.userName{
+    font-size: 16px;
+    font-weight: 600;
+    color: #363636;
+    padding-left: 10px;
+    font-family: 'Crimson Text', serif;
+}
+.userAvater{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.userNavBar .nav-link{
+    font-size: 16px;
+    color: #363636;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+}
+.userNavBar .nav-link i{padding-right: 10px;}
+.userNavBar .active .nav-link, .userNavBar .nav-link:hover{
+    color: #3897cf;
+    background-color: #f9f9f9;
+    border-left: 3px solid #3897cf;
+}
+
+/*User Main Content*/
+
+.userMainContent{height: 100vh;}
+.bgImg03{
+    background-image: url('../images/bg_img_02.jpg');
+    background-size: cover;
+}
+.headTitle{
+    color: #363636;
+    text-transform: uppercase;
+}
+.headTitle span{
+    text-transform: uppercase;
+    color: #3897cf;
+}
+.cardWidgetTitle{
+    font-size: 20px;
+    color: #363636;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cardWidgetList li a{
+    font-size: 18px;
+    color: #363636;
+    font-weight: 600;
+    line-height: 35px;
+}
+.cardWidgetList2{
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+.cardWidgetList2 li{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.cardWidgetList li strong{text-transform: uppercase;}
+
+.cardTable{border: 1px solid rgba(0, 0, 0, 0.1);}
+.cardTable thead th{
+    background-color: #f7f7f7;
+    font-size: 18px;
+    color: #363636;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0px;
+}
+.cardTable td{
+    font-size: 16px;
+    color: #363636;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    line-height: 35px;
+}
+.cardTable td a{color: #3897cf;}
+.stockInfo{
+    text-transform: uppercase;
+    background-color: #f7f7f7;
+    padding:10px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.cardTable .btn{
+    font-size: 12px;
+    color: #363636;
+    background-color: #f7f7f7;
+    margin-right: 15px;
+}
+.cardTable .btnActionUpdate:hover{
+    color: #ffffff;
+    background-color: #3897cf;
+}
+.cardTable .btnActionDelete:hover{
+    color: #ffffff;
+    background-color: #dc3545;
+}
+.payTitle{
+    font-size: 18px;
+    font-weight: 600;
+}
+.payExp{
+    font-size: 14px;
+    color: #363636;
+}
+.btnSm{
+    font-size: 12px!important;
+    color: #ffffff!important;
+    
+}
+.cardBtBorder{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.addPaymentCard{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.formBody {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.cardBl{
+    font-size: 20px;
+    padding: 0 1rem;
+}
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+}
+
+input[type=checkbox] + label:before { content: "\f0c8"; } /* unchecked icon */
+input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+input[type=checkbox]:checked + label:before { content: "\f00c"; } /* checked icon */
+input[type=checkbox]:checked + label:before { letter-spacing: 5px; } /* allow space for check mark */
+
+.radioLabel {
+    display: block;
+}
+.formRadio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+.radioLabel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.formRadio input[type="radio"] + .radioLabel:before {
+    content: '';
+    background: transparent;
+    border-radius: 100%;
+    border: 1px solid #363636;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 0;
+    margin-right: 0.5rem;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease;
+}
+.formRadio input[type="radio"]:checked + .radioLabel:before {
+    background-color: #3897cf;
+    box-shadow: inset 0 0 0 2px #f4f4f4;
+}
+
+/*User Profile*/
+
+.cardSecTitle{font-size: 16px;color: #363636;text-transform: uppercase;}
+.cardSubtitle{
+    font-size: 17px;
+    color: #363636;
+    font-weight: 600;
+}

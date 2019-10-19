@@ -194,7 +194,6 @@ i {
 }
 /*strong*/
 strong {
-	font-size: 16px;
 	font-weight: 700;
 }
 /* Lists */
@@ -303,6 +302,9 @@ a:hover {color: inherit;}
 
 .bgImg01{background-image: url('../images/bg_img_01.jpg');}
 .bgImg02{background-image: url('../images/banner_img_01.jpg');}
+
+/* --- Section Border --------------------- */
+.secBorder{border-top: 1px solid #d4d4d4;}
 
 /* --- Bg Color --------------------- */
 .bgGray{background-color: #f6f6f6;}
@@ -535,6 +537,8 @@ h2.discountTxt{
 	font-size: 90px;
 	font-style: italic;
 	position: relative;
+	max-width: 60%;
+	margin: 0 auto;
 }
 .discountTxt:after,
 .discountTxt:before{
@@ -670,3 +674,98 @@ h2.discountTxt{
 	padding-left: 10px;
 }
 .filterList li a:hover{color: #3897cf;margin-left: 2px;}
+
+/*Product Single Page*/
+
+.productCardHead{
+	display: -webkit-box;
+    display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.productReviewStar{
+	display: -webkit-box;
+    display: -ms-flexbox;
+	display: flex;
+	color: #efce4a;
+}
+.star{color: #dcdcdc;}
+.productReviewStar li{margin-right: 5px;}
+.productSingleTitle{
+	font-size: 25px;
+	text-transform: uppercase;
+}
+.authName, .authName a{
+	font-size: 18px;
+	color: #404041;
+}
+.authName a{text-decoration: underline!important;}
+.productsinglePrice{
+	font-size: 30px;
+	color: #363636;
+}
+.productAvaility{
+	font-size: 18px;
+	color: #404041;
+	font-weight: 600;
+	padding-left: 10px;
+}
+.inputValue{
+	font-size: 18px;
+	text-align: center;
+}
+.productBtnGroup .btn{
+	font-size: 14px;
+	padding: 0 15px;
+}
+.linkBtnBorder{
+	color: #3897cf;
+	background-color: transparent;
+	border: 1px solid #3897cf;
+}
+.linkBtnBorder:hover{
+	color: #3897cf;
+}
+.productDes p{
+	font-size: 18px;
+	margin-bottom: 0.5rem;
+}
+.productNavTabs .nav-link{
+	font-size: 16px;
+	color: #363636;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 0px;
+}
+.productNavTabs .nav-link.active, .productNavTabs .show>.nav-link{
+	background-color: transparent;
+	color: #3897cf;
+	border-bottom:2px solid #3897cf;
+}
+.productTabContent{padding: 0 15px;}
+.specifications li{
+	font-size: 18px;
+	color: #363636;
+}
+
+.singleReview{
+	border-bottom: 1px solid #d4d4d4!important;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 0px;
+}
+.reviewUserName{
+	font-size: 18px;
+	color: #363636;
+}
+.reviewDate{font-size: 14px;color: #363636;padding-left: 10px;font-weight: 600;}
+.reviewUserAvater{
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+}
