@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Title -->
+    <title>Checkout</title>
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1" name="viewport">
+    <meta content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" name="generator">
+    <meta content="" name="author">
+    <meta content="" name="description">
+    
+    <!-- fav icon -->
+    <!-- <link href="images/favicon.png" rel="shortcut icon"> -->
+
+    <!-- css => style sheet -->
+    <link rel="stylesheet" href="../assets/css/custom.css">
+    
+    <!--[if lt IE 9]><!-->
+    <!-- css for ie -->
+    <link href="../assets/css/ie.css" media="screen" rel="stylesheet" type="text/css">
+    <!--<![endif]-->
+  </head>
+
+  <body>
+    <div class="allWrapper bgGray">
+
+      <header class="header clearfix border-0 pt-5 pb-5" id="header">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <div class="logoWrapper">
+                <h1 class="logoText"><a href="#">LOGO</a></h1>
+              </div><!-- end of logoWrapper -->
+            </div><!-- end of col2 -->
+
+          </div><!-- end of row -->
+        </div><!-- end of container -->
+      </header><!-- end of header -->
+
+      <main class="mainContent clearfix" id="mainContent">
+        <section class="checkoutProductDetails clearfix pt-5 pb-5" id="checkoutProductDetails">
+          <div class="container">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="productCartList webScrollbar">
+                      <div class="porductCartSingle d-flex align-items-center mb-2">
+                        <div class="cartProductMedia bgGray">
+                          <img src="assets/images/product_cat_img_01.jpg" alt="">
+                        </div><!-- end of -->
+  
+                        <div class="cartProductDes pl-3">
+                          <h3><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h3>
+                          <p>Price <span class="price">$16.00</span></p>
+                          <p>Price <span class="qut">1</span></p>
+                          <p>Total <span class="totalPrice">$16.00</span></p>
+                        </div><!-- end of productDes -->
+                      </div><!-- end of porductCartSingle -->
+
+                      <div class="porductCartSingle d-flex align-items-center mb-2">
+                        <div class="cartProductMedia bgGray">
+                          <img src="assets/images/product_cat_img_01.jpg" alt="">
+                        </div><!-- end of -->
+  
+                        <div class="cartProductDes pl-3">
+                          <h3><a href="#">Lorem ipsum dolor sit amet, consectetur</a></h3>
+                          <p>Price <span class="price">$16.00</span></p>
+                          <p>Price <span class="qut">1</span></p>
+                          <p>Total <span class="totalPrice">$16.00</span></p>
+                        </div><!-- end of productDes -->
+                      </div><!-- end of porductCartSingle -->
+
+                    </div><!-- end of productCartList -->
+                  </div><!-- end of col -->
+  
+                  <div class="col align-self-end">
+                    <div class="cartProductValue clearfix" id="cartProductValu">
+                      <ul class="productValue text-right">
+                        <li><strong>Price:</strong> $50.00</li>
+                        <li><strong>Delivery:</strong> $00.00</li>
+                        <li><strong>Total:</strong> $50.00</li>
+                      </ul>
+                    </div><!-- end of cartProductValu -->
+                  </div><!-- end of col -->
+
+                </div><!-- end of row -->
+
+              </div><!-- end of card-body -->
+            </div><!-- end of card -->
+          </div><!-- end of container -->
+        </section><!-- end of checkoutProductDetails -->
+
+        <section class="checkoutInfoDetails pb-5 clearfix" id="checkoutInfoDetails">
+          <div class="container">
+            <div class="card border-0">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col">
+                    <div class="userInfoDetails">
+                      <ul class="userTabsNav mb-4 nav nav-pills mb-3 align-items-center justify-content-between" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active" id="pills-address-tab" data-toggle="pill" href="#pills-address" role="tab" aria-controls="pills-address" aria-selected="true">Address details</a>
+                        </li>
+                        <li class="nav-item">
+                          <i class="fas fa-angle-double-right"></i>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="pills-payment-tab" data-toggle="pill" href="#pills-payment" role="tab" aria-controls="pills-payment" aria-selected="false">Payment and delivery</a>
+                        </li>
+                        <li class="nav-item">
+                          <i class="fas fa-angle-double-right"></i>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="pills-order-tab" data-toggle="pill" href="#pills-order" role="tab" aria-controls="pills-order" aria-selected="false">Order confirmation</a>
+                        </li>
+                      </ul><!-- end of nav-pills -->
+                    </div><!-- end of userInfoDetails -->
+                  </div><!-- end of col -->
+                </div><!-- end of row -->
+
+                <div class="row">
+                  <div class="col">
+
+                    <div class="checkoutStepArea clearfix" id="checkoutStepArea">
+                      <div class="tab-content userTabContent" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-address" role="tabpanel" aria-labelledby="pills-address-tab">
+                          <form class="row userInfoForm" id="userInfoForm">
+
+                            <div class="col-sm-6 form-group">
+                              <label for="firstName" class="formLabel">First name</label>
+                              <input type="text" class="form-control" id="firstName">
+                            </div><!-- end of form-group -->
+
+                            <div class="col-sm-6 form-group">
+                              <label for="lastName" class="formLabel">Last name</label>
+                              <input type="text" class="form-control" id="lastName">
+                            </div><!-- end of form-group -->
+
+                            <div class="col-sm-12 form-group">
+                              <label for="Estate">Estate</label>
+                              <select class="form-control" id="Estate">
+                                <option></option>
+                                <option>Estate 1</option>
+                                <option>Estate 2</option>
+                                <option>Estate 3</option>
+                                <option>Estate 4</option>
+                              </select>
+                            </div><!-- end of form-group -->
+
+                            <div class="col-sm-12 form-group">
+                              <label for="city" class="formLabel">City</label>
+                              <input type="text" class="form-control" id="city">
+                            </div><!-- end of form-group -->
+
+                            <div class="col-sm-12 form-group">
+                              <label for="address" class="formLabel">Address </label>
+                              <input type="text" class="form-control" id="address ">
+                            </div><!-- end of form-group -->
+  
+                            <div class="col-sm-6 form-group">
+                              <label for="zipCode" class="formLabel">Zip code </label>
+                              <input type="text" class="form-control" id="zipCode">
+                            </div><!-- end of form-group -->
+  
+                            <div class="col-sm-6 form-group">
+                              <label for="apartament" class="formLabel">House/apartament number </label>
+                              <input type="text" class="form-control" id="apartament">
+                            </div><!-- end of form-group -->
+  
+                            <div class="col-sm-6 form-group">
+                              <label for="email" class="formLabel">Email </label>
+                              <input type="email" class="form-control" id="email">
+                            </div><!-- end of form-group -->
+  
+                            <div class="col-sm-6 form-group">
+                              <label for="phoneNumber" class="formLabel">Phone number </label>
+                              <input type="text" class="form-control" id="phoneNumber">
+                            </div><!-- end of form-group -->
+  
+                            <div class="col-sm-12 form-group">
+                              <label for="comments" class="formLabel">Comments</label>
+                              <textarea name="comments" id="" cols="30" rows="4"></textarea>
+                            </div><!-- end of form-group-->
+                            
+                            <div class="col-sm-12 form-check formCheckbox mt-2">
+                              <input class="form-check-input" type="checkbox" value="" id="check1">
+                              <label class="form-check-label" for="check1">I agree with <a href="#">Terms and Conditions</a></label>
+                            </div><!-- end of form-check -->
+                            
+                            <div class="col-sm-12 form-check formCheckbox mt-2">
+                              <input class="form-check-input" type="checkbox" value="" id="check2">
+                              <label class="form-check-label" for="check2">I agree with <a href="#">Privacy Policy</a></label>
+                            </div><!-- end of form-check -->
+
+                            <div class="col mt-4 text-right">
+                              <button type="submit" class="btn btn-primary">Next</button>
+                            </div>
+                            
+                          </form><!-- end of userInfoForm -->
+                        </div><!-- end of tab-pane-->
+
+                        <div class="tab-pane fade" id="pills-payment" role="tabpanel" aria-labelledby="pills-payment-tab">
+                          <h3>Choose a payment method</h3>
+                          <form class="userInfoForm" id="userInfoForm">
+                            
+                            <div class="formBody bgGray mt-3 mb-2">
+                              <div class="form-check formRadio">
+                                <input class="form-check-input" type="radio" name="radio" id="radios1" value="option1">
+                                <label class="form-check-label radioLabel" for="radios1">
+                                  Mpesa
+                                </label><!-- end of label -->
+                              </div><!-- end of form-check -->
+                            </div><!-- end of formBody -->
+
+                            <div class="formBody bgGray">
+                              <div class="form-check formRadio">
+                                <input class="form-check-input" type="radio" name="radio" id="radios2" value="option2">
+                                <label class="form-check-label radioLabel" for="radios2">
+                                    Visa
+                                </label><!-- end of label -->
+                              </div><!-- end of form-check -->
+
+                              <div class="payInfoDetails clearfix">
+                                <hr class="hrBorder">
+                                <div class="cardInfoForm p-3">
+                                  <div class="row align-items-center">
+                                    <div class="col-sm-10 form-group">
+                                      <label for="card-number">Card number</label>
+                                      <input type="text" class="form-control" id="card-number" aria-describedby="emailHelp" placeholder="">
+                                    </div><!-- end of form-group -->
+                                    <div class="col">
+                                      <img src="../assets/images/user/card_icon_img.png" alt="">
+                                    </div><!-- end of col -->
+                                  </div><!-- end of row -->
+                                  
+                                  <div class="row align-items-center justify-content-between">
+                                    <div class="col-sm-3 form-group">
+                                      <label for="card-number">Expiry date</label>
+                                      <ul class="cardPayFiled d-flex align-items-center justify-content-end">
+                                        <li><input type="text" class="form-control" id="card-number" aria-describedby="emailHelp" placeholder="MM"></li>
+                                        <li class="cardBl">/</li>
+                                        <li><input type="text" class="form-control" id="card-number" aria-describedby="emailHelp" placeholder="YY"></li>
+                                      </ul><!-- end of cardPayFiled -->
+                                    </div><!-- end of form-group -->
+
+                                    <div class="col offset-sm-4 form-group">
+                                      <label for="card-number">CVV</label>
+                                      <input type="text" class="form-control" id="card-number" aria-describedby="emailHelp" placeholder="">
+                                    </div><!-- end of form-group -->
+                                    <div class="col-sm-2">
+                                      <img src="../assets/images/user/card_icon_cvv_img.png" alt="">
+                                    </div><!-- end of col -->
+                                  </div><!-- end of row -->
+
+                                  <div class="row">
+                                    <div class="col">
+                                      <button class="btn btn-primary">Add</button>
+                                    </div><!-- end of col -->
+                                  </div><!-- end of row -->
+
+                                </div><!-- end of cardInfoForm -->
+                              </div><!-- end of payInfoDetails -->
+                            </div><!-- end of formBody -->
+
+                            <div class="formBody bgGray mt-3 mb-4">
+                              <div class="form-check formRadio">
+                                <input class="form-check-input" type="radio" name="radio" id="radios3" value="option3">
+                                <label class="form-check-label radioLabel" for="radios3">
+                                  Paypal
+                                </label><!-- end of label -->
+                              </div><!-- end of form-check -->
+                            </div><!-- end of formBody -->
+
+                            <h3>Choose a payment method</h3>
+
+                            <div class="formBody bgGray mt-4 mb-2">
+                              <div class="form-check formRadio">
+                                <div class="row cartShippingOption">
+                                  <div class="col">
+                                    <input class="form-check-input" type="radio" name="radio" id="radios4" value="option4">
+                                    <label class="form-check-label radioLabel" for="radios4">
+                                      Standard
+                                    </label><!-- end of label -->
+                                  </div><!-- end of col -->
+
+                                  <div class="col text-right shippingCostPrice">
+                                    <span class="shippingCost"><strong>Time:</strong> 170 hours</span> <span class="shippingPrice pl-3 pr-3"><strong>Price:</strong> $0</span>
+                                  </div><!-- end of col -->
+                                </div><!-- end of cartShippingOption -->
+                                
+                              </div><!-- end of form-check -->
+                            </div><!-- end of formBody -->
+  
+                            <div class="formBody bgGray mt-3 mb-2">
+                              <div class="form-check formRadio">
+                                <div class="row cartShippingOption">
+                                  <div class="col">
+                                    <input class="form-check-input" type="radio" name="radio" id="radios5" value="option5">
+                                    <label class="form-check-label radioLabel" for="radios5">
+                                        Express
+                                    </label><!-- end of label -->
+                                  </div><!-- end of col -->
+
+                                  <div class="col text-right shippingCostPrice">
+                                    <span class="shippingCost"><strong>Time:</strong> 150 hours</span> <span class="shippingPrice pl-3 pr-3"><strong>Price:</strong> $5</span>
+                                  </div><!-- end of col -->
+                                </div><!-- end of cartShippingOption -->
+                                
+                              </div><!-- end of form-check -->
+                            </div><!-- end of formBody -->
+
+                            <div class="row form-group mt-5">
+                              <div class="col">
+                                <button type="submit" class="btn btnSecondary">Prev</button>
+                              </div><!-- end of col -->
+                              
+                              <div class="col text-right">
+                                <button type="submit" class="btn btn-primary">Next</button>
+                              </div><!-- end of col -->
+                            </div><!-- end of form-group-->
+
+                          </form><!-- end of userInfoForm -->
+                        </div><!-- end of tab-pane -->
+
+                        <div class="tab-pane fade" id="pills-order" role="tabpanel" aria-labelledby="pills-order-tab">
+                          <form class="userInfoForm">
+                            <h3>Choose a payment method</h3>
+
+                            <div class="row mt-4">
+                              <div class="col-sm-6">
+                                <ul class="orderConfrimationList">
+                                  <li><strong>First name:</strong> Sam</li>
+                                  <li><strong>Last name:</strong> Smith</li>
+                                  <li><strong>Phone:</strong> +123 456 7890</li>
+                                  <li><strong>Email:</strong> you@example.com</li>
+                                  <li><strong>Email:</strong> you@example.com</li>
+                                </ul><!-- end of orderConfrimationList -->
+                              </div><!-- end of col -->
+  
+                              <div class="col-sm-6">
+                                <ul class="orderConfrimationList">
+                                  <li><strong>City:</strong> Lorem ipsum</li>
+                                  <li><strong>Estate:</strong> Lorem ipsum</li>
+                                  <li><strong>Address:</strong> set amet adipiscing</li>
+                                  <li><strong>Zip code:</strong> 56437</li>
+                                </ul><!-- end of orderConfrimationList -->
+                              </div><!-- end of col -->
+
+                              <div class="col-sm-6 mt-4">
+                                <ul class="orderConfrimationList">
+                                  <li><strong>City:</strong> Lorem ipsum</li>
+                                  <li><strong>Estate:</strong> Lorem ipsum</li>
+                                  <li><strong>Address:</strong> set amet adipiscing</li>
+                                  <li><strong>Zip code:</strong> 56437</li>
+                                </ul><!-- end of orderConfrimationList -->
+                              </div><!-- end of col -->
+                            </div><!-- end of row -->
+
+                            <div class="row form-group mt-5">
+                              <div class="col">
+                                <button type="submit" class="btn btnSecondary">Prev</button>
+                              </div><!-- end of col -->
+                              
+                              <div class="col text-right">
+                                <button type="submit" class="btn btn-primary" data-target="#confirmOrder" data-toggle="modal">Confirm order</button>
+                              </div><!-- end of col -->
+                            </div><!-- end of form-group-->
+    
+                          </form><!-- end of userInfoForm -->
+                        </div><!-- end of tab-pane -->
+                      </div><!-- end of userTabContent -->
+                    </div><!-- end of checkoutStepArea -->
+
+                  </div><!-- end of col -->
+                </div><!-- end of row -->
+              </div><!-- end of card-body -->
+            </div><!-- end of card -->
+          </div><!-- end of container -->
+        </section><!-- end of checkoutInfoDetails -->
+      </main><!-- end of mainContent -->
+    </div><!-- end of allWrapper -->
+
+    <div class="modal fade conModal" id="confirmOrder" tabindex="-1" role="dialog" aria-labelledby="confirmModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content pb-4">
+          <div class="modal-header border-0">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div><!-- end of modal-header -->
+          <div class="modal-body border-0 text-center">
+            <h2>Product added to cart successfully!</h2>
+          </div><!-- end of modal-body -->
+
+          <div class="modal-footer border-0 justify-content-center">
+            <button type="button" class="btn btn-primary">Continue shoping</button>
+          </div><!-- end of modal-footer -->
+
+        </div><!-- end of modal-content -->
+      </div><!-- end of modal-dialog -->
+    </div><!-- end of peoductAddCartModal -->
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
