@@ -42,69 +42,6 @@
     text-transform: uppercase;
     color: #3897cf;
 }
-.cardWidgetTitle{
-    font-size: 20px;
-    color: #363636;
-    text-transform: uppercase;
-    text-align: center;
-}
-.cardWidgetList li a{
-    font-size: 18px;
-    color: #363636;
-    font-weight: 600;
-    line-height: 35px;
-}
-.cardWidgetList2{
-    display: flex;
-    flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-}
-.cardWidgetList2 li{
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-.cardWidgetList li strong{text-transform: uppercase;}
-
-.cardTable{border: 1px solid rgba(0, 0, 0, 0.1);}
-.cardTable thead th{
-    background-color: #f7f7f7;
-    font-size: 18px;
-    color: #363636;
-    font-weight: 700;
-    text-transform: uppercase;
-    border: 0px;
-}
-.cardTable td{
-    font-size: 16px;
-    color: #363636;
-    font-family: 'Crimson Text', serif;
-    font-weight: 600;
-    line-height: 35px;
-}
-.cardTable td a{color: #3897cf;}
-.stockInfo{
-    text-transform: uppercase;
-    background-color: #f7f7f7;
-    padding:10px 15px;
-    font-size: 12px;
-    font-weight: 700;
-    border-radius: 5px;
-}
-.cardTable .btn{
-    font-size: 12px;
-    color: #363636;
-    background-color: #f7f7f7;
-    margin-right: 15px;
-}
-.cardTable .btnActionUpdate:hover{
-    color: #ffffff;
-    background-color: #3897cf;
-}
-.cardTable .btnActionDelete:hover{
-    color: #ffffff;
-    background-color: #dc3545;
-}
 .payTitle{
     font-size: 18px;
     font-weight: 600;

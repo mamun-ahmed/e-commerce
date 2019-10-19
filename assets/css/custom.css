@@ -769,3 +769,133 @@ h2.discountTxt{
 	height: 35px;
 	border-radius: 50%;
 }
+
+.helpNavList .nav-link{
+	font-size: 16px;
+	color: #363636;
+	font-weight: 600;
+	padding-left: 0px;
+}
+.helpNavList .active .nav-link{color: #3897cf;font-weight: 700;}
+.helpNavList .active .nav-link:hover{margin-left: 0px;}
+.helpNavList .nav-link:hover{color: #3897cf;margin-left: 5px;}
+.helpPara p{margin-bottom: 10px;font-weight: 400;}
+
+/*Help Nav End*/
+
+.cardWidgetTitle{
+    font-size: 20px;
+    color: #363636;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cardWidgetList li a{
+    font-size: 18px;
+    color: #363636;
+    font-weight: 600;
+    line-height: 35px;
+}
+.cardWidgetList2{
+    display: flex;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+.cardWidgetList2 li{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.cardWidgetList li strong{text-transform: uppercase;}
+.productContent{position: relative;}
+.favoritIcon{
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #ea4f4b;
+}
+/*Card Widget End*/
+
+
+.cardTable{border: 1px solid rgba(0, 0, 0, 0.1);}
+.cardTable thead th{
+    background-color: #f7f7f7;
+    font-size: 18px;
+    color: #363636;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 0px;
+}
+.cardTable td{
+    font-size: 16px;
+    color: #363636;
+    font-family: 'Crimson Text', serif;
+    font-weight: 600;
+    line-height: 35px;
+}
+.cardTable td a{color: #3897cf;}
+.stockInfo{
+    text-transform: uppercase;
+    background-color: #f7f7f7;
+    padding:10px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.cardTable .btn{
+    font-size: 12px;
+    color: #363636;
+    background-color: #f7f7f7;
+    margin-right: 15px;
+}
+.cardTable .btnActionUpdate:hover{
+    color: #ffffff;
+    background-color: #3897cf;
+}
+.cardTable .btnActionDelete:hover{
+    color: #ffffff;
+    background-color: #dc3545;
+}
+
+.cardTableStyle2 .card-body{padding:0px;}
+.cardTableStyle2 td{vertical-align: middle;}
+
+/*Card Table End*/
+.productQut{
+	font-size: 16px;
+	color: #363636;
+	padding:  0 15px;
+	font-weight: 600;
+}
+
+.cartProductMedia{
+	max-width: 110px;
+	padding: 10px;
+	max-height: 140px;
+}
+/* .cartProductMedia img{
+	max-height: 120px;
+} */
+.cartProductTitle h3{
+	font-size: 18px;
+	font-weight: 400;
+	padding-left: 10px;
+}
+.btnGraySm{
+	color: #363636;
+	background-color: #e2e2e2;
+	font-size: 16px;
+	min-height: 25px;
+	line-height: 25px;
+	text-transform: capitalize;
+	letter-spacing: 0;
+	font-weight: 400;
+}
+.btnGraySm:hover{color: #363636;}
+.cartPriceList li,
+.cartPriceList li span{
+	font-size: 18px;
+	font-weight: 600;
+	color: #363636;
+}
+.cartPromo .form-control{max-width: 155px;}
+.cartProductPrice .btn{width: 100%;}
