@@ -406,7 +406,10 @@ textarea::before {
 	color:#363636;
 	font-size: 16px;
 }
+.cardInfotd{width: 70%;}
 .headPopBarList li a i{font-size: 12px;padding-right: 5px;}
+.headPopBarList li{margin-right: 1rem;}
+.headPopBarList li:last-child{margin-right: 0rem;}
 
 /*Footer*/
 .footerLogo .logoText{line-height: 25px;}
@@ -1092,6 +1095,12 @@ h2.discountTxt{
 		flex-flow: row wrap;
 	}
 	.productBtnGroup .btn{padding-left: 5px;padding-right: 5px;font-size:13px;}
+	.myOrderArea .col-sm-8{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.cardInfotd {width: 65%;}
 
 }
 
@@ -1167,6 +1176,9 @@ h2.discountTxt{
 		flex: 0 0 50%;
 		max-width: 50%;
 	}
+	.cardTable thead th{font-size:13px;}
+	.cardInfotd {width: 50%;}
+	.actionBtntd .btn{display: inline-block;}
 
 }
 

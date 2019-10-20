@@ -28,6 +28,12 @@ html,body, .fullHeight{
     text-transform: uppercase;
 }
 
+/*Login Page*/
+.loginMainArea {
+    background-size: 50% 100%!important;
+    background-position: center right!important;
+}
+
 /*SignUp Page*/
 
 .signUpBodyBg{
