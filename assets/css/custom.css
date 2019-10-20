@@ -1146,6 +1146,27 @@ h2.discountTxt{
 	}
 	.productCardBody{padding:1.25rem;}
 	.productCardDetails {margin-top: 1rem;}
+	.asideWidget, .productContent {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.singleFilter {
+		-ms-flex-wrap: wrap;
+    	flex-wrap: wrap;
+	}
+	.productContent .row.mb-4 .col{
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
+		width: auto;
+		max-width: 100%;
+	}
+	.productContent .row.mb-4 .col:last-child{
+		margin-top: 1rem;
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
 
 }
 
@@ -1277,6 +1298,14 @@ h2.discountTxt{
 		margin-right: 1rem;
 	}
 	.singleItem.bgGray.p-2{margin-bottom: .5rem!important;}
+	.productContent .row.mb-4 .col:last-child{
+		-ms-flex: 0 0 70%;
+		flex: 0 0 70%;
+		max-width: 70%;
+	}
+	.helpContentArea{margin-top: 1rem;}
+
+	
 }
 
 /*------------------------------------------------------------------------------*/
@@ -1308,6 +1337,12 @@ h2.discountTxt{
 	.sectionTitle{font-size:18px;}
 	.bannerTitle {font-size: 24px;}
 	.cardContentDetails .col-sm-3{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.productContent .row.mb-4 .col:nth-child(2){margin-top: 1rem;}
+	.productContent .row.mb-4 .col:last-child{
 		-ms-flex: 0 0 100%;
 		flex: 0 0 100%;
 		max-width: 100%;
