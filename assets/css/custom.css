@@ -381,12 +381,15 @@ textarea::before {
 .headFeature{
 	color: #ffffff;
 	font-size: 15px;
-	line-height: 40px;
+	line-height: 30px;
 	font-family: 'Crimson Text', serif;
 }
 .headFeature i{font-size: 12px;padding-right: 5px;}
 
 /*Heder*/
+.headerTopBar{min-height: 40px;}
+.headFeatureList li{margin-right: 1rem;}
+.headFeatureList li:last-child{margin-right: 0;}
 .header{border-bottom: 1px solid #dcdcdc;min-height: 60px;}
 
 .navbar-expand-lg .navbar-nav .nav-link{
@@ -1176,6 +1179,8 @@ h2.discountTxt{
 		flex: 0 0 70%;
 		max-width: 70%;
 	}
+	.userTabsNav li:last-child{margin-top: 1rem;}
+	.stepIcon{padding-left: 0.5rem;padding-right: 0.5rem;}
 	
 	
 
@@ -1226,14 +1231,24 @@ h2.discountTxt{
 		width: 50%;
 	}
 	.cartPromo {margin-top: 1rem;}
+	.userTabsNav {justify-content: unset!important;}
+	.productValue{margin-top: 1rem;}
 
+}
+
+/*------------------------------------------------------------------------------*/
+/*                    Width : 424px
+/*------------------------------------------------------------------------------*/
+@media only screen and (max-width: 424px){
+	.userTabsNav li:nth-child(3){margin-top: 1rem;}
+	.headFeature{font-size: 13px;}
 }
 
 /*------------------------------------------------------------------------------*/
 /*                    Width : 360px
 /*------------------------------------------------------------------------------*/
 @media only screen and (max-width: 360px){
-	.headFeature{font-size:12px;line-height: 30px;}
+	.headFeature{font-size:12px;line-height: 20px;padding: 0.5rem 0rem;}
 	.footerLinksList li{width: 100%;max-width: 100%;}
 	.sectionTitle{font-size:18px;}
 	.bannerTitle {font-size: 24px;}
