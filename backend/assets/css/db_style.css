@@ -315,10 +315,11 @@ input[type="button"]{
 	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 label{
-	color: #9a9a9a;
+	label 
+	color: #363636;
 	font-family: 'Fira Sans', sans-serif;
-	font-size: 0.8em;
-	cursor: pointer;
+	font-size: 17px;
+	font-weight: 600;
 }
 input[type="checkbox"],
 .check,

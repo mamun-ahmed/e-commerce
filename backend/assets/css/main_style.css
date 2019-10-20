@@ -256,3 +256,9 @@
     box-shadow: none;
 }
 .cv_db_btn_full{max-width: 100%;width: 100%;}
+
+/*Main Style*/
+
+.productMedia{
+    padding: 15px;
+}
