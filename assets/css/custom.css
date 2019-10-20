@@ -1088,6 +1088,10 @@ h2.discountTxt{
 @media only screen and (max-width: 1199px){
 	.productCatTitle {font-size: 20px;}
 	.row.justify-content-end.text-right .col-sm-3{max-width: 100%;}
+	.productCardHead{
+		flex-flow: row wrap;
+	}
+	.productBtnGroup .btn{padding-left: 5px;padding-right: 5px;font-size:13px;}
 
 }
 
@@ -1132,6 +1136,16 @@ h2.discountTxt{
 				font-weight: 400;
 	}
 	.cardTable .btn i{padding-left: 5px;}
+	.productDetails .col-sm-6{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.productGallery .singleItem {
+		max-width: 80%;
+	}
+	.productCardBody{padding:1.25rem;}
+	.productCardDetails {margin-top: 1rem;}
 
 }
 
@@ -1181,7 +1195,7 @@ h2.discountTxt{
 	}
 	.userTabsNav li:last-child{margin-top: 1rem;}
 	.stepIcon{padding-left: 0.5rem;padding-right: 0.5rem;}
-	
+	.productGallery .singleItem {max-width: 100%;}
 	
 
 
@@ -1233,7 +1247,44 @@ h2.discountTxt{
 	.cartPromo {margin-top: 1rem;}
 	.userTabsNav {justify-content: unset!important;}
 	.productValue{margin-top: 1rem;}
+	.productBtnGroup  .col-sm-2,
+	.productBtnGroup  .col{
+		-ms-flex: 0 0 auto;
+		flex: 0 0 auto;
+		width: auto;
+		max-width: 100%;
+		margin-right: 1rem;
+	}
+	.productBtnGroup  .col-sm-2{max-width: 15%;}
+	.productBtnGroup .btn {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.productGallery{
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		margin-bottom: 1rem;
+	}
+	.productGallery .singleItem {
+		-ms-flex-preferred-size: 0;
+		flex-basis: 0;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+		max-width: 100%;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.singleItem.bgGray.p-2{margin-bottom: .5rem!important;}
+}
 
+/*------------------------------------------------------------------------------*/
+/*                    Width : 500px
+/*------------------------------------------------------------------------------*/
+@media only screen and (max-width: 500px){
+
+	.productBtnGroup .linkBtnBorder{margin-top: 1rem;}
 }
 
 /*------------------------------------------------------------------------------*/
@@ -1242,6 +1293,10 @@ h2.discountTxt{
 @media only screen and (max-width: 424px){
 	.userTabsNav li:nth-child(3){margin-top: 1rem;}
 	.headFeature{font-size: 13px;}
+	.productGallery .singleItem{
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+	}
 }
 
 /*------------------------------------------------------------------------------*/
