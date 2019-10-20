@@ -1,0 +1,258 @@
+/*Main Section Card Style*/
+.cv_db_icon_shape{
+    padding: 12px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.cv_db_icon_shape i, .cv_db_icon_shape svg {
+    font-size: 1.5rem;
+}
+.cv_db_currency{
+    font-size: 1.2rem;
+}
+.text-nowrap{
+    font-weight: 300;
+}
+
+/*Table Style*/
+.table thead th {
+    font-size: .7rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e9ecef;
+}
+.table th {
+    font-weight: 600;
+}
+.table td, .table th {
+    font-size: .9rem;
+    white-space: nowrap;
+}
+.table.align-items-center td, .table.align-items-center th {
+    vertical-align: middle;
+}
+
+/*Settings Page Style */
+
+.cv_db_pageinfo_title{
+    font-weight: 400;
+    font-size: 50px;
+}
+.cv_db_content_cardbody {
+    padding: 1.5rem;
+    flex: 1 1 auto;
+}
+
+.cv_db_form_body .form-control {
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    height: calc(2.75rem + 2px);
+    padding: .625rem .75rem;
+    transition: all .2s cubic-bezier(.68,-.55,.265,1.55);
+    color: #8898aa;
+    border: 1px solid #cad1d7;
+    border-radius: .375rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    box-shadow: none;
+}
+.cv_db_form_body .form-control-label {
+    font-size: .875rem;
+    font-weight: 600;
+    color: #525f7f;
+    line-height: 1.5;
+    margin-bottom: 0;
+    padding-top: calc(.625rem + 1px);
+    padding-bottom: calc(.625rem + 1px);
+}
+.cv_db_form_body .focused .form-control {
+    border-color: rgba(50,151,211,.25);
+}
+.cv_db_form_body .form-control-alternative {
+    transition: box-shadow .15s ease;
+    border: 0;
+    box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+}
+.cv_db_form_body .form-control-alternative:focus {
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+}
+.cv_db_input_sm{max-width: 40%!important;}
+
+/*Card Header */
+.border-0 {
+    border: 0!important;
+}
+.cv_db_card_header {
+    margin-bottom: 0;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+/*Pagination*/
+
+.cv_db_pagination .page-link{
+    font-size: 0.89rem;
+}
+.page-link:focus {
+    z-index: 2;
+    outline: 0;
+    box-shadow: none;
+}
+.card .table td, .card .table th {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+.cv_db_badge {
+    font-size: 66%;
+    font-weight: 600;
+    line-height: 1;
+    display: inline-block;
+    padding: .35rem .375rem;
+    text-align: center;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border-radius: .375rem;
+}
+.cv_db_badge_danger {
+    color: #f80031;
+    background-color: rgba(251,175,190,.5);
+}
+.form-control {
+    font-size: 1rem;
+    line-height: 1.5;
+    display: block;
+    width: 100%;
+    height: calc(2.75rem + 2px);
+    padding: .625rem .75rem;
+    transition: all .2s cubic-bezier(.68,-.55,.265,1.55);
+    color: #8898aa;
+    border: 1px solid #cad1d7;
+    border-radius: .375rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    box-shadow: none;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color:#cad1d7;
+    outline: 0;
+    box-shadow: none;
+}
+.control-label{font-size: 1rem;}
+
+::-webkit-input-placeholder { /* Edge */
+    font-size: 1rem;
+    color: #8898aa;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 1rem;
+    color: #8898aa;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+::placeholder {
+    font-size: 1rem;
+    color: #8898aa;
+    line-height: 1.5;
+}
+
+/*Accroding Style*/
+.btn-link:hover, .btn-link.focus, .btn-link:focus{text-decoration: none!important;}
+.cv_db_btn_block, .cv_db_btn_block:hover{
+    transform: none!important;
+    box-shadow: none!important;
+}
+.cv_card_toggle .btn{width: 100%;;}
+
+/*Checkbox*/
+
+.custom-control-label::before {
+    font-size: .875rem;
+    cursor: pointer;
+    position: absolute;
+    top: .125rem;
+    left: -1.75rem;
+    display: block;
+    width: 1.25rem;
+    height: 1.25rem;
+    content: '';
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.custom-control-label::before {
+    transition: all .2s cubic-bezier(.68,-.55,.265,1.55);
+    border: 1px solid #cad1d7;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    border-color: #5e72e4;
+}
+.custom-control-input:active~.custom-control-label::before {
+    color: #fff;
+    background-color: #5e72e4;
+    box-shadow: none;
+}
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    border-color: #007bff;
+}
+.custom-checkbox .custom-control-input~.custom-control-label {
+    font-size: .875rem;
+    cursor: pointer;
+}
+.form-control-label {
+    font-size: .875rem;
+    font-weight: 600;
+    color: #525f7f;
+}
+.cv_bd_btn_icon{
+    color: #525f7f!important;
+}
+
+/*Owner Style*/
+
+.cv_db_user_avater{
+    display: flex;
+    max-width: 50px;
+    min-height: 50px;
+
+}
+
+/*File Upload*/
+
+.cv_db_custom_file{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+}
+.cv_db_custom_file_label{
+    line-height: 1.5;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #ffffff;
+    border-radius: .375rem;
+    box-shadow: none;
+}
+.cv_db_btn_full{max-width: 100%;width: 100%;}
