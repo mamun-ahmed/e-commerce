@@ -865,7 +865,9 @@ h2.discountTxt{
 	color: #363636;
 	padding:  0 15px;
 	font-weight: 600;
+	width: 100%;
 }
+.cartQntN{width: 100px;}
 
 .cartProductMedia{
 	max-width: 110px;
@@ -1075,4 +1077,170 @@ h2.discountTxt{
 	font-weight: 600;
 	color: #363636;
 	line-height: 30px;
+}
+
+/*------------------------------------------------------------------------------*/
+/*                    Width : 1199px
+/*------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1199px){
+	.productCatTitle {font-size: 20px;}
+	.row.justify-content-end.text-right .col-sm-3{max-width: 100%;}
+
+}
+
+/*------------------------------------------------------------------------------*/
+/*                    Width : 991px
+/*------------------------------------------------------------------------------*/
+@media only screen and (max-width: 991px){
+	.productCatTitle {font-size: 17px;}
+	.productCatCard .card-body{padding-left: 0px;padding-right: 0px;}
+	.card-body{padding-left: 5px;padding-right: 5px;}
+	.singleFeature .card-body h4{font-size:16px;}
+	.subscribeForm input{width: 100%;}
+	.subscribeForm .btn{margin-left: 10px;}
+	.subscribeCard  .card-body h1{font-size: 35px;}
+	.subscribeCard  .card-body p br{display: none;}
+	p{font-weight: 400;}
+	.footer .col,
+	.footer .col-sm-2,
+	.footer .col-sm-5{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-bottom: 2rem;
+	}
+	.footerSocial{
+		-webkit-box-pack: start;
+		-ms-flex-pack: start;
+			justify-content: flex-start;
+	}
+	.postTitle a{font-size:13px;line-height: 20px;}
+	.bannerTitle{font-size:28px;}
+	h2.discountTxt{max-width: 100%;}
+	.banner{background-position: 35% 100%;}
+	.cartProductMedia{width: 200px;}
+	.cardTable .btn{
+		display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+				align-items: center;
+				font-weight: 400;
+	}
+	.cardTable .btn i{padding-left: 5px;}
+
+}
+
+/*------------------------------------------------------------------------------*/
+/*                    Width : 767px
+/*------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px){
+	.headerTopBar .col-sm-3,
+	.headerTopBar .col-sm-5,
+	.mailSubscribe .col-sm-10,
+	.footerBottom .col,
+	.footerBottom .col-sm-3,
+	.blogArea .col-sm-8,
+	.blogArea .col-sm-4{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.ourBenefits .col-sm-3,
+	.cardContentDetails .col-sm-3{
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 1rem;
+	}
+	.footerBottom .col{margin-bottom: 1rem;}
+	.productView .row{
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	}
+	.productView .col-auto{
+		margin-bottom: 1rem;
+	}
+	.blogArea .col-sm-8,
+	.blogArea .col-sm-4{
+		margin-bottom: 1rem;
+	}
+	.postTitle a{font-size:20px;}
+	.articleBody.p-5{
+		padding: 1rem!important;
+	}
+	.banner .col-sm-6{
+		-ms-flex: 0 0 70%;
+		flex: 0 0 70%;
+		max-width: 70%;
+	}
+	
+	
+
+
+}
+
+
+/*------------------------------------------------------------------------------*/
+/*                    Width : 575px
+/*------------------------------------------------------------------------------*/
+@media only screen and (max-width: 575px){
+
+	.productCatMedia img{width: 100%;}
+	.productCatTitle{font-size: 25px;}
+	.productCat  .col-sm-4{margin-bottom: 2rem;}
+	.subscribeCard .card-body h1 {
+		font-size: 30px;
+		line-height: 30px;
+		margin-bottom: 1rem;
+	}
+	.subscribeForm {
+		-webkit-box-orient: horizontal;
+   -webkit-box-direction: normal;
+       -ms-flex-flow: row wrap;
+           flex-flow: row wrap;
+	}
+	.subscribeForm .form-group{width: 100%;}
+	.subscribeForm .btn{
+		width: 100%;
+		margin-left: 0px;
+	}
+	.productView .col-auto{
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+	.productMedia img{width: 100%;}
+	.productMedia{min-height: auto;}
+	.productTitle{font-size:15px;}
+	.sectionTitle{font-size:20px;}
+	.linkBtn{padding-left: 10px;padding-right: 10px;}
+	.banner .col-sm-6{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	.cartProductPrice .btn {
+		width: 50%;
+	}
+	.cartPromo {margin-top: 1rem;}
+
+}
+
+/*------------------------------------------------------------------------------*/
+/*                    Width : 360px
+/*------------------------------------------------------------------------------*/
+@media only screen and (max-width: 360px){
+	.headFeature{font-size:12px;line-height: 30px;}
+	.footerLinksList li{width: 100%;max-width: 100%;}
+	.sectionTitle{font-size:18px;}
+	.bannerTitle {font-size: 24px;}
+	.cardContentDetails .col-sm-3{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
 }
