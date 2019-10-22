@@ -37,15 +37,18 @@
             <li class="nav-item ">
               <a class="nav-link " href="#navbar-books" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-books">
                 <i class="fas fa-user-tie"></i>
-                <span class="nav-link-text"> Books </span>
+                <span class="nav-link-text"> Product </span>
               </a>
               <div id="navbar-books" class="collapse ">
                 <ul class="nav cv_db_collapse_nav flex-column">                              
                   <li class="nav-item">
-                    <a href="#" class="nav-link ">All Books</a>
+                    <a href="#" class="nav-link ">All Product</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link ">Add New Book</a>
+                    <a href="#" class="nav-link ">Add New Product</a>
+                  </li>                        
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Categories</a>
                   </li>                        
                 </ul>
               </div>            
@@ -103,67 +106,7 @@
                 <ul class="nav cv_db_collapse_nav flex-column">                              
                   <li class="nav-item">
                     <a href="#" class="nav-link ">General</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Coupons</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Countries</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Cities</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">District</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Locations</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Vehicle Categories</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Vehicle Sub Categories</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Vehicle Brands</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Vehicle Models</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Vehicle Release Years</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Vehicle Code</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Driver Experience</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Payment Account Name</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Terms & Condition Type</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Terms & Condition Details</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Polygons</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Commission Charges</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Driver Online Bonus</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Dashboard Widgets</a>
-                  </li>              
-                  <li class="nav-item">
-                    <a href="#" class="nav-link ">Export</a>
-                  </li>              
+                  </li>          
                 </ul>
               </div>            
             </li><!-- end of li -->
@@ -209,7 +152,7 @@
                           <p>Developer</p>
                         </div><!-- end of cv_db_user_info -->
                         <div class="cv_db_user_avater">
-                          <img src="assets/images/Mamun.jpg" alt="User Avater">
+                          <img src="../assets/images/Mamun.jpg" alt="User Avater">
                         </div><!-- end of cv_db_user_avater -->
                       </a>
                       <div class="cv_bd_dropdown_menu cv_db_admin_nav dropdown-menu cv_db_slideIn" aria-labelledby="cv_bd_dropdown">
@@ -241,23 +184,184 @@
                       <div class="row">
 
                         <div class="col">
-                          <h2>Add New Book</h2>
+                          <h2>Add New Product</h2>
                         </div><!-- end of col -->
+
+                        <div class="col">
+                          <div class="editBtnSettings ">
+                            <ul class="editBtnList d-flex justify-content-end">
+                              <li><a href="#" class="btn btn-primary">Add Product</a></li>
+                              <li><a href="#" class="btn btn-secondary">Cancel</a></li>
+                            </ul>
+                          </div><!-- end of editBtnSettings -->
+                        </div><!-- end of col -->
+
                       </div><!-- end of row -->
                     </div><!-- end of card-header -->
 
                     <div class="card-body">
                       <form action="" class="addNewBookForm">
                         <div class="row">
-                          <div class="col form-group">
-                            <label for="authorName">Author Name</label>
-                            <input type="text" class="form-control" id="authorName" placeholder="">
-                          </div><!-- end of form-group -->
+                          <div class="col-sm-8">
+                            <div class="row">
 
-                          <div class="col form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                          </div><!-- end of form-group -->
+                              <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="authorName">Product Title</label>
+                                  <input type="text" class="form-control" id="productTtle" placeholder="" />
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+
+                              <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="shortDescription">Short Description</label>
+                                  <textarea name="" id="shortDescription" cols="30" rows="2"></textarea>
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+                              
+                              <div class="col-sm-12">
+                                <div class="form-group">
+                                  <label for="shortDescription">Description</label>
+                                  <textarea name="" id="shortDescription" cols="30" rows="3"></textarea>
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+  
+                            </div><!-- end of row -->
+
+                            <div class="row">
+                              <div class="col-sm-12">
+                                  <h4 class="subTitle mt-3 mb-3">Product Details</h4>
+                              </div><!-- end of col -->
+
+                              <div class="col-sm-4">
+                                <div class="form-group">
+                                  <label for="numberOfPages">Categories </label>
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Select Categories </option>
+                                    <option>Kindergarten </option>
+                                    <option>Primary school</option>
+                                    <option>Secondary school</option>
+                                    <option>Stationery</option>
+                                    <option>Bibles</option>
+                                  </select>
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+                              
+                              <div class="col-sm-4">
+                                <div class="form-group">
+                                  <label for="productPrice">Product Price </label>
+                                  <input type="text" class="form-control" id="productPrice" value="$ " />
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+                              
+                              <div class="col-sm-4">
+                                <div class="form-group">
+                                  <label for="numberOfPages">Product Status </label>
+                                  <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Select Status</option>
+                                    <option>Available </option>
+                                    <option>Unavailable</option>
+                                  </select>
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+                              
+                            </div><!-- end of row -->
+
+                            <div class="row">
+
+                              <div class="col-sm-12">
+                                <h4 class="subTitle mt-3 mb-3">Specifications</h4>
+                              </div><!-- end of col-->
+
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="authorName">Author </label>
+                                  <input type="text" class="form-control" id="authorName" placeholder="" />
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+                              
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="disciplineName">Discipline </label>
+                                  <input type="text" class="form-control" id="disciplineName" placeholder="" />
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+                              
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="stageName">Stage  </label>
+                                  <input type="text" class="form-control" id="stageName" placeholder="" />
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+                              
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="publishingHouse">Publishing house  </label>
+                                  <input type="text" class="form-control" id="publishingHouse" placeholder="" />
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+                              
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="publishingYear">Publishing year </label>
+                                  <input type="text" class="form-control" id="publishingYear" placeholder="" />
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+  
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="bookCover">Book cover</label>
+                                  <input type="text" class="form-control" id="bookCover" placeholder="" />
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+  
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="language">Language </label>
+                                  <input type="text" class="form-control" id="language" placeholder="" />
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+  
+                              <div class="col-sm-3">
+                                <div class="form-group">
+                                  <label for="numberOfPages">Number of pages </label>
+                                  <input type="text" class="form-control" id="numberOfPages" placeholder="" />
+                                </div><!-- end of form-group -->
+                              </div><!-- end of col -->
+                            
+                            </div><!-- end of row -->
+                          </div><!-- end of col8 -->
+                          
+                          <div class="col">
+                            <div class="productGallery">
+                              <div class="productPreviewImg">
+                               <img src="../assets/images/books/book_img_01.jpg" alt="" />
+                              </div><!-- end of productPreviewImg -->
+
+                              <ul class="productGalleryList d-flex">
+                                <li class="productSingleImg bgGray">
+                                  <span class="removeImgIcon"><i class="far fa-trash-alt"></i></span>
+                                  <img src="../assets/images/books/book_img_01.jpg" alt="" />
+                                </li><!-- end of li -->
+
+                                <li class="productSingleImg">
+                                  <label class="imageBrowse bgGray" for="imageBrowse1">
+                                    <i class="far fa-image"></i>
+                                    <span>browse</span> 
+                                    <input type="file" class="form-control-file" id="imageBrowse1">
+                                  </label>
+                                </li><!-- end of li -->
+
+                                <li class="productSingleImg">
+                                  <label class="imageBrowse bgGray" for="imageBrowse1">
+                                    <i class="far fa-image"></i>
+                                    <span>browse</span> 
+                                    <input type="file" class="form-control-file" id="imageBrowse1">
+                                  </label>
+                                </li><!-- end of li -->
+                              </ul><!-- end of productGalleryList -->
+                            </div><!-- end of productGallery -->
+                          </div><!-- end of col -->
 
                         </div><!-- end of row -->
                       </form><!-- end of -->

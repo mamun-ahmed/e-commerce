@@ -262,7 +262,7 @@ textarea {
 	vertical-align: top;
 	width: 100%;
 	max-width: 100%;
-	min-height: 132px;
+	/* min-height: 132px; */
 	position: relative;
 }
 textarea::before {
@@ -315,76 +315,113 @@ input[type="button"]{
 	box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
 }
 label{
-	label 
 	color: #363636;
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 17px;
 	font-weight: 600;
 }
-input[type="checkbox"],
-.check,
-input[type="radio"],
-.radio {
-	display: none;
-}
-input[type="checkbox"] + label,
-.check + label,
-input[type="radio"] + label,
-.radio + label {
-	display: inline-block;
-	line-height: 22px;
-	margin-bottom: 10px;
-}
-input[type="checkbox"] + label:after,
-.check + label:after,
-input[type="radio"] + label:after,
-.radio + label:after {
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-	-khtml-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
-	content: '';
-	font-family: 'FontAwesome';
-	color: #ffffff;
-	display: inline-block;
-	float: left;
-	line-height: 15px;
-	text-align: center;
-	font-size: 100%;
-	z-index: 100;
-	margin-right: 10px;
-}
-input[type="checkbox"]:checked + label:after,
-.check:checked + label:after,
-input[type="radio"]:checked + label:after,
-.radio:checked + label:after {
-	content: '\f00c';
-}
-input[type="radio"] + label:after,
-.radio + label:after {
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	-o-border-radius: 100px;
-	-ms-border-radius: 100px;
-	-khtml-border-radius: 100px;
-	border-radius: 100px;
-}
-input[type="radio"]:checked + label,
-.radio:checked + label {
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	-ms-border-radius: 50%;
-	-khtml-border-radius: 50%;
-	border-radius: 50%;
-}
-input[type="radio"]:checked + label:after,
-.radio:checked + label:after {
-	content: '\f111';
+
+.formCheckbox label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 5px;
+  }
+  
+  .formCheckbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+	height: 17px;
+	top: -8px;
+    left: 0;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  }
+  
+  .formCheckbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: -8px;
+    margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #555555;
+  }
+  
+  .formCheckbox input[type="checkbox"] {
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .formCheckbox input[type="checkbox"]:focus + label::before {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+  
+  .formCheckbox input[type="checkbox"]:checked + label::after {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f00c";
+  }
+.formCheckbox label{
+    font-size: 17px;
+    color: #363636;
 }
 
+/*Radio Style */
+.radioLabel {
+    display: block;
+}
+.formRadio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+.radioLabel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.formRadio input[type="radio"] + .radioLabel:before {
+    content: '';
+    background: transparent;
+    border-radius: 100%;
+    border: 1px solid #363636;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 0;
+    margin-right: 0.5rem;
+    vertical-align: top;
+    cursor: pointer;
+    text-align: center;
+    transition: all 250ms ease;
+}
+.formRadio input[type="radio"]:checked + .radioLabel:before {
+    background-color: #3897cf;
+    box-shadow: inset 0 0 0 2px #f4f4f4;
+}
 /* --- tables --------------------- */
 table {
 	border-collapse: separate;
