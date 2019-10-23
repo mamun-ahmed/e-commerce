@@ -37,7 +37,6 @@ const Changepass = () => {
                   </Form.Group>{/* end of Form.Group */}
   
                   <Form.Group>
-                    <label for="confirmPass">Confirm password</label>
                     <Form.Label htmlFor="confirmPass">Confirm password</Form.Label>
                     <Form.Control type="password" id="confirmPass" />
                   </Form.Group>{/* end of Form.Group */}

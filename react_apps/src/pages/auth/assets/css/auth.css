@@ -139,7 +139,7 @@ html,body, .fullHeight, #root{
 /*------------------------------------------------------------------------------*/
 /*                    Width : landscape
 /*------------------------------------------------------------------------------*/
-@media only screen and (orientation: landscape){
+@media (min-width : 0px) and (max-width : 767px) and (orientation : landscape) {
     #loginBody{
         height: auto!important;
     }
