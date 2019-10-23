@@ -130,13 +130,20 @@ html,body, .fullHeight, #root{
 /*                    Width : 767px
 /*------------------------------------------------------------------------------*/
 @media only screen and (max-width: 767px){
-    .loginMainArea{
-        height: auto;
-    }
-    html,body, .fullHeight, #root{
+   
+    #signUpBody{
         height: auto!important;
     }
     
+}
+/*------------------------------------------------------------------------------*/
+/*                    Width : landscape
+/*------------------------------------------------------------------------------*/
+@media only screen and (orientation: landscape){
+    #loginBody{
+        height: auto!important;
+    }
+
 }
 
 /*------------------------------------------------------------------------------*/

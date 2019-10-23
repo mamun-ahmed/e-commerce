@@ -6,7 +6,7 @@ import './assets/css/auth.css';
 const Signup = () => {
     return (<>
       <div className="allWrapper fullHeight">
-        <main className="loginMainArea clearfix fullHeight bgImage signUpBodyBg pb-3" id="loginArea">
+        <main className="loginMainArea clearfix fullHeight bgImage signUpBodyBg pb-3" id="signUpBody">
           <Container fluid={true}>
             <Row>
               <Col sm={6}>

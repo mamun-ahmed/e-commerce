@@ -5,6 +5,8 @@ import {
   Route} from "react-router-dom";
 import Login from './pages/auth/Login';
 import Signup from './pages/auth/Signup';
+import Forgotpass from './pages/auth/Forgotpass';
+import Changepass from './pages/auth/Changepass';
 
 function App() {
   return (
@@ -15,6 +17,12 @@ function App() {
        </Route>
        <Route path="/signup">
           <Signup/>
+       </Route>
+       <Route path="/forgotpass">
+          <Forgotpass />
+       </Route>
+       <Route path="/changepass">
+          <Changepass />
        </Route>
      </Switch>
    </Router>
