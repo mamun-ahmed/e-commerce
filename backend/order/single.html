@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Title CSS -->
-    <title>All Books</title>
+    <title>All Order Details</title>
 
     <!-- Dashboard Sytle CSS -->
     <link rel="stylesheet" href="../assets/css/db_style.css">
@@ -57,15 +57,15 @@
             <li class="nav-item ">
               <a class="nav-link " href="#navbar-agents" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-agents">
                 <i class="fas fa-user-secret"></i>
-                <span class="nav-link-text"> Agents </span>
+                <span class="nav-link-text"> Orders </span>
               </a>
               <div id="navbar-agents" class="collapse ">
                 <ul class="nav cv_db_collapse_nav flex-column">                              
                   <li class="nav-item">
-                    <a href="#" class="nav-link ">Approved Agents</a>
+                    <a href="#" class="nav-link ">All Orders</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link ">Pending Approvals</a>
+                    <a href="#" class="nav-link ">Order Pending Approvals</a>
                   </li>                       
                   <li class="nav-item">
                     <a href="#" class="nav-link ">Unapproved Agents</a>
@@ -183,12 +183,8 @@
                     <div class="card-header">
                       <div class="row">
 
-                        <div class="col">
-                          <h2>All Product</h2>
-                        </div><!-- end of col -->
-
-                        <div class="col text-right mb-2">
-                            <a href="create.html" class="btn btn-primary">Add Product</a>
+                        <div class="col mb-3">
+                          <h2>Order Details</h2>
                         </div><!-- end of col -->
                       </div><!-- end of row -->
 
@@ -196,16 +192,16 @@
                         <div class="col">
                           <ul class="subList d-flex clearfix">
                             <li><a href="#" class="current">All <span class="count">(10)</span></a></li>
-                            <li><a href="#">Published <span class="count">(5)</span></a></li>
+                            <li><a href="#">Approved <span class="count">(5)</span></a></li>
                             <li><a href="#">Pending <span class="count">(5)</span></a></li>
-                            <li><a href="#">Trash <span class="count">(5)</span></a></li>
+                            <li><a href="#">Completed <span class="count">(5)</span></a></li>
                           </ul><!-- end of subList -->
                         </div><!-- end of col -->
 
                         <div class="col-sm-3">
                           <form action="">
                             <div class="input-group">
-                              <input type="text" class="form-control" placeholder="Search a Book" aria-label="" aria-describedby="basic-addon1">
+                              <input type="text" class="form-control" placeholder="Search Order Items" aria-label="" aria-describedby="basic-addon1">
                               <div class="input-group-prepend">
                                 <button class="btn btn-outline-secondary" type="button"><i class="fas fa-search"></i></button>
                               </div><!-- end of input-group-prepend -->
@@ -218,17 +214,6 @@
                         <div class="col">
                           <form class="actionForm">
                             <div class="row">
-                              <div class="col-auto pr-1">
-                                <div class="d-flex form-group actionGroup">
-                                  <select class="form-control">
-                                    <option>Actions</option>
-                                    <option>Edit</option>
-                                    <option>Move to Trash</option>
-                                  </select>
-                                  <button class="btn btn-secondary actionBtn ml-2">Apply</button>
-                                </div><!-- end of form-group -->
-                              </div><!-- end of col -->
-
                               <div class="col-auto pl-1">
                                 <div class="d-flex form-group actionGroup">
                                   <select class="form-control">
@@ -271,96 +256,123 @@
                     </div><!-- end of card-header -->
 
                     <div class="card-body">
-                      
-                      <div class="table-responsive" id="cv_db_table_area">
-                        <table class="table align-items-center table-flush" id="cv_db_table_income_summary">
-                          <thead class="thead-light">
-                            <tr>
-                              <th class="checkColumn" scope="col">
-                                  <div class="form-check formCheckbox">
-                                  <input class="form-check-input" type="checkbox" value="" id="check1" />
-                                  <label class="form-check-label" for="check1"></label>
-                                </div><!-- end of formCheckbox -->
-                              </th>
-                              <th scope="col">Image</th>
-                              <th scope="col">Title</th>
-                              <th scope="col">Author </th>
-                              <th scope="col">Discipline </th>
-                              <th scope="col">Stage </th>
-                              <th scope="col">Publishing house </th>
-                              <th scope="col">Publishing year</th>
-                              <th scope="col">Book cover</th>
-                              <th scope="col">Language </th>
-                              <th scope="col">No. of pages </th>
-                              <th scope="col">Action </th>
-                            </tr>
-                          </thead><!-- end of thead -->
-    
-                          <tbody>
-                            <tr>
-                              <td class="checkColumn tdwordBrake"> 
-                                <div class="form-check formCheckbox">
-                                  <input class="form-check-input" type="checkbox" value="" id="check1" />
-                                  <label class="form-check-label" for="check1"></label>
-                                </div><!-- end of formCheckbox -->
-                              </td><!-- end of td -->
+                      <div class="row">
+                        
+                        <div class="col-auto">
+                          <div class="productInfoDetails mb-3">
+                            <p><strong>VOUCHER NO.</strong><span>#06#c1</span></p>
+                          </div><!-- end of productInfoDetails -->
+                          <div class="orderProductImage mb-3">
+                            <img src="../assets/images/books/book_img_01.jpg" alt="" />
+                          </div><!-- end of orderProductImage-->
+                          <h2>Maths time for class 1</h2>
+                        </div><!-- end of col -->
 
-                              <td class="productImgColumn tdwordBrake">
-                                <img src="../assets/images/books/book_img_01.jpg" alt="">
-                              </td>
-                              <td class="titleColumn tdwordBrake">
-                                <strong><a href="#">Maths time for class 1</a></strong>
-                              </td>
-                              <td>Sam Smith</td>
-                              <td>Math</td>
-                              <td>Class 2</td>
-                              <td>Lorem Ipsum</td>
-                              <td>2012</td>
-                              <td>Lorem ipsum</td>
-                              <td>English</td>
-                              <td>135</td>
-                              <td>
-                                <div class="actionBtn tdwordBrake">
-                                  <a href="#" class="btn btn-secondary"><i class="far fa-edit"></i></a>
-                                  <a href="#" class="btn btn-danger"><i class="far fa-trash-alt"></i></a>
-                                </div><!-- end of actionBtn -->
-                              </td><!-- end of td -->
-                            </tr><!-- end of tr -->
-                            
-                            <tr>
-                              <td class="checkColumn tdwordBrake"> 
-                                <div class="form-check formCheckbox">
-                                  <input class="form-check-input" type="checkbox" value="" id="check1" />
-                                  <label class="form-check-label" for="check1"></label>
-                                </div><!-- end of formCheckbox -->
-                              </td><!-- end of td -->
+                        <div class="col-auto">
+                          <table class="table border orderDetailsTable">
+                            <tbody>
+                              <tr>
+                                <th scope="row">PRICE</th>
+                                <td>:</td>
+                                <td>$16.00</td>
+                              </tr><!-- end of tr -->
 
-                              <td class="productImgColumn tdwordBrake">
-                                <img src="../assets/images/books/book_img_01.jpg" alt="">
-                              </td>
-                              <td class="titleColumn tdwordBrake">
-                                <strong><a href="#">Maths time for class 1</a></strong>
-                              </td>
-                              <td>Sam Smith</td>
-                              <td>Math</td>
-                              <td>Class 2</td>
-                              <td>Lorem Ipsum</td>
-                              <td>2012</td>
-                              <td>Lorem ipsum</td>
-                              <td>English</td>
-                              <td>135</td>
-                              <td>
-                                <div class="actionBtn tdwordBrake">
-                                  <a href="#" class="btn btn-secondary"><i class="far fa-edit"></i></a>
-                                  <a href="#" class="btn btn-danger"><i class="far fa-trash-alt"></i></a>
-                                </div><!-- end of actionBtn -->
-                              </td><!-- end of td -->
-                            </tr><!-- end of tr -->
+                              <tr>
+                                <th scope="row">AMOUNT</th>
+                                <td>:</td>
+                                <td>10</td>
+                              </tr><!-- end of tr -->
+
+                              <tr>
+                                <th scope="row">TOTAL</th>
+                                <td>:</td>
+                                <td>$160.00</td>
+                              </tr><!-- end of tr -->
+
+                              <tr>
+                                <th scope="row">CITY</th>
+                                <td>:</td>
+                                <td>New York</td>
+                              </tr><!-- end of tr -->
+
+                              <tr>
+                                <th scope="row">ESTATE</th>
+                                <td>:</td>
+                                <td>USA</td>
+                              </tr><!-- end of tr -->
+
+                              <tr>
+                                <th scope="row">ZIP CODE</th>
+                                <td>:</td>
+                                <td>1230</td>
+                              </tr><!-- end of tr -->
+
+                              <tr>
+                                <th scope="row">Phone No</th>
+                                <td>:</td>
+                                <td>+256985874</td>
+                              </tr><!-- end of tr -->
+                            </tbody><!-- end of tbody -->
+                          </table><!-- end of tbale -->
+
+                        </div><!-- end of col -->
+                        
+                        <div class="col-sm-4">
+                            <table class="table border orderDetailsTable">
+                              <tbody>
+                                <tr>
+                                  <th scope="row">ORDER STATUS</th>
+                                  <td>:</td>
+                                  <td><span class="orderStatus p-1 bg-primary">IN Stock</span></td>
+                                </tr><!-- end of tr -->
+  
+                                <tr>
+                                  <th scope="row">ORDER DATE</th>
+                                  <td>:</td>
+                                  <td><span class="orderDate">11.05.2019</span> <span class="orderTime">14:53</span></td>
+                                </tr><!-- end of tr -->
+                                
+                                <tr>
+                                  <td>
+                                    <div class="cardPaymentDetails">
+                                      <h3 class="payTitle">Visa <span class="cardNumber">**** **** **** 5365</span></h3>
+                                    </div>
+                                  </td>
+                                  <td></td>
+                                  <td><p class="payExp">Expires in 09/21</p></td>
+                                </tr><!-- end of tr -->
+  
+                                <tr>
+                                  <th scope="row">DELIVERY METHOD</th>
+                                  <td>:</td>
+                                  <td><span class="deliveryMethod p-1 bg-info rounded">Standard </span></td>
+                                </tr><!-- end of tr -->
+  
+                                <tr>
+                                  <th scope="row">Address</th>
+                                  <td></td>
+                                  <td></td>
+                                </tr><!-- end of tr -->
+  
+                                <tr>
+                                  <td class="tdwordBrake addressH">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</td>
+                                  <td></td>
+                                  <td></td>
+                                </tr><!-- end of tr -->
+  
+                              </tbody><!-- end of tbody -->
+                            </table><!-- end of tbale -->
+  
+                          </div><!-- end of col -->
                           
-                          </tbody><!-- end of tbody -->
-                        </table><!-- end of table -->
-                      </div><!-- end cv_db_table_area -->
-
+                          <div class="col text-right">
+                            <div class="actionBtn">
+                              <a href="#" class="btn btn-secondary">Approve</a>
+                              <a href="#" class="btn btn-danger">Decline</a>
+                            </div><!-- end of actionBtn -->
+                          </div><!-- end of col -->
+                          
+                      </div><!-- end of row -->
                     </div><!-- end of card-body -->
                   </div><!-- end of card -->
 

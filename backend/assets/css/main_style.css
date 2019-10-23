@@ -364,3 +364,13 @@
     font-size: 15px;
     font-weight: 500;
 }
+address p, .addressInfo strong{font-size: .9rem;}
+.orderStatus{
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+.productDetailsInfo li{font-size: 1.3rem;}
+.orderDetailsTable thead tr th{border: 0px;background-color: #f9f9f9;}
+.addressH{height: 89px;}
+.expressCharge{color: #17a2b8;}
