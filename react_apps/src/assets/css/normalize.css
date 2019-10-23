@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i,700,700i&display=swap');
 
 /*CSs File Import */
-
+@import url('theme.css');
 
 
 /*FontAwesome */
@@ -288,3 +288,7 @@ a:hover {color: inherit;}
 .clearfix:after {
 	clear: both;
 }
+
+/* Background Color */
+
+.bgBlack {background-color: #333333;}

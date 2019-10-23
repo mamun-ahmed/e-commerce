@@ -1,0 +1,22 @@
+
+
+/* Header Top Bar End */
+.headerTopBar {min-height: 40px;}
+.headFeature{
+	color: #ffffff;
+	font-size: 15px;
+	line-height: 30px;
+	font-family: 'Crimson Text', serif;
+}
+.headFeature i{font-size: 12px;padding-right: 5px;}
+.headerTopBar{min-height: 40px;}
+.headFeatureList li{margin-right: 1rem;}
+.headFeatureList li:last-child{margin-right: 0;}
+
+
+/* Header Style */
+
+.logoText a{font-size: 30px;}
+.logoText a:hover{color: #3897cf;}
+
+/* Logo Style */
