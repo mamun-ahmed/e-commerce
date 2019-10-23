@@ -11,8 +11,8 @@ function HeaderComponent() {
             <div className="col-auto">
               <div className="headFeature">
                 <i className="fas fa-map-marker-alt"></i><span>Delivery region: Nairobi</span>
-              </div>
-            </div>
+              </div>{/* end of headFeature */}
+            </div>{/* end of col */}
 
             <div className="col-auto">
               <div className="headFeature">
@@ -20,20 +20,21 @@ function HeaderComponent() {
                   <li><i className="fas fa-truck"></i> <span>Free delivery</span></li>
                   <li><i className="fas fa-award"></i> <span>Genuine goods</span></li>
                   <li><i className="fas fa-headset"></i> <span>Customer support</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        <header className="header clearfix" id="header">
+                </ul>{/* end of headFeatureList */}
+              </div>{/* end of headFeature */}
+            </div>{/* end of col */}
+          </div>{/* end of row */}
+        </div>{/* end of container */}
+      </div>{/* end of headerTopBar */}
+
+      <header className="header clearfix" id="header">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-sm-2">
               <div className="logoWrapper">
                 <h1 className="logoText"><Link to="#">LOGO</Link></h1>
-              </div>
-            </div>
+              </div>{/* end of logoWrapper */}
+            </div>{/* end of col */}
 
             <div className="col-sm-6">
               <div className="headerNav clearfix" id="headerNav">
@@ -58,11 +59,11 @@ function HeaderComponent() {
                       <li className="nav-item">
                         <Link className="nav-link" to="#">Bibles</Link>
                       </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-            </div>
+                    </ul>{/* end of navbar-nav */}
+                  </div>{/* end of navbar-collapse */}
+                </nav>{/* end of navbar */}
+              </div>{/* end of headerNav */}
+            </div>{/* end of col */}
             
 
             <div className="col-sm-4">
@@ -72,13 +73,13 @@ function HeaderComponent() {
                   <li><Link to="#"><i className="far fa-star"></i> Favorites</Link></li>
                   <li><Link to="#"><i className="fas fa-shopping-cart"></i> Cart</Link></li>
                   <li><Link to="#"><i className="far fa-user"></i> Login</Link></li>
-                </ul>
-              </div>
-            </div>
+                </ul>{/* end of headPopBarList */}
+              </div>{/* end of headPopBar */}
+            </div>{/* end of col */}
 
-          </div>
-        </div>
-      </header>
+          </div>{/* end of row */}
+        </div>{/* end of container */}
+      </header>{/* end of header */}
     </>)
 }
 

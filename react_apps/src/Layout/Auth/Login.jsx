@@ -11,9 +11,9 @@ export default function Login(){
             <div className="col-sm-5">
               <div className="logoWrapper mt-4 mb-4">
                 <h1 className="logoText"><Link to="#">LOGO</Link></h1>
-              </div>
-            </div>
-          </div>
+              </div> {/* end of  logoWrapper */}
+            </div>{/* end of  col */}
+          </div>{/* end of  row */}
 
           <div className="row">
             <div className="col-sm-5">

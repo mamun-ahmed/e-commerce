@@ -13,7 +13,7 @@ import Checkout from './pages/Checkout';
 import Terms from './pages/Terms';
 import Favaourite2 from './pages/favourite2';
 import Favourite from './pages/favourite';
-import UserIndex from './pages/user/Index';
+import UserIndex from './pages/user/index';
 import MailPage from './pages/user/Mail';
 import OrderPage from './pages/user/Order';
 import PaymentPage from './pages/user/Payment';
