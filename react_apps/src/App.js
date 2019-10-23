@@ -7,6 +7,7 @@ import Login from './pages/auth/Login';
 import Signup from './pages/auth/Signup';
 import Forgotpass from './pages/auth/Forgotpass';
 import Changepass from './pages/auth/Changepass';
+import VerifyCode from './pages/auth/VerifyCode';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
        </Route>
        <Route path="/changepass">
           <Changepass />
+       </Route>
+       <Route path="/verify-code">
+        <VerifyCode />
        </Route>
      </Switch>
    </Router>
