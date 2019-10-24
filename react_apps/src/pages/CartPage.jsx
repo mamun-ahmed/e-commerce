@@ -184,38 +184,38 @@ const CartPage = () => {
 
                         <tr>
                           <td>
-                            <div class="cartProductDetails d-flex flex-fill align-items-center">
-                              <div class="cartProductMedia bgGray ">
+                            <div className="cartProductDetails d-flex flex-fill align-items-center">
+                              <div className="cartProductMedia bgGray ">
                                 <img src={productImage1} alt="" />
                               </div>{/* end of cartProductTitle */}
 
-                              <div class="cartProductTitle">
+                              <div className="cartProductTitle">
                                 <h3>Lorem ipsum dolor sit amet, consectetur</h3>
                               </div>{/* end of cartProductTitle */}
                             </div>{/* end of td */}
                           </td>{/* end of td */}
                           <td>$16.00</td>
-                          <td class="cartQntN"><Form.Control type="number" placeholder="1" /></td>
+                          <td className="cartQntN"><Form.Control type="number" placeholder="1" /></td>
                           <td>$16.00</td>
-                          <td><Button class="btn">Delete <i class="fas fa-times"></i></Button></td>
+                          <td><Button className="btn">Delete <i className="fas fa-times"></i></Button></td>
                         </tr>{/* end of tr */}
-                        
+
                         <tr>
                           <td>
-                            <div class="cartProductDetails d-flex flex-fill align-items-center">
-                              <div class="cartProductMedia bgGray ">
+                            <div className="cartProductDetails d-flex flex-fill align-items-center">
+                              <div className="cartProductMedia bgGray ">
                                 <img src={productImage1} alt="" />
                               </div>{/* end of cartProductTitle */}
 
-                              <div class="cartProductTitle">
+                              <div className="cartProductTitle">
                                 <h3>Lorem ipsum dolor sit amet, consectetur</h3>
                               </div>{/* end of cartProductTitle */}
                             </div>{/* end of td */}
                           </td>{/* end of td */}
                           <td>$16.00</td>
-                          <td class="cartQntN"><Form.Control type="number" placeholder="1" /></td>
+                          <td className="cartQntN"><Form.Control type="number" placeholder="1" /></td>
                           <td>$16.00</td>
-                          <td><Button class="btn">Delete <i class="fas fa-times"></i></Button></td>
+                          <td><Button className="btn">Delete <i className="fas fa-times"></i></Button></td>
                         </tr>{/* end of tr */}
                         
                       </tbody>{/* end of tbody */}
@@ -245,11 +245,11 @@ const CartPage = () => {
 
             <Row className="justify-content-end text-right mt-4 mb-5">
               <Col sm="4">
-                <div class="cartProductPrice">
-                  <ul class="cartPriceList">
-                    <li>Price.....................................................<span class="pPrice">$50.00</span></li>
-                    <li>Delivery.............................................<span class="pPrice">$00.00</span></li>
-                    <li>Total.....................................................<span class="pPrice">$50.00</span></li>
+                <div className="cartProductPrice">
+                  <ul className="cartPriceList">
+                    <li>Price.....................................................<span className="pPrice">$50.00</span></li>
+                    <li>Delivery.............................................<span className="pPrice">$00.00</span></li>
+                    <li>Total.....................................................<span className="pPrice">$50.00</span></li>
                   </ul>{/* end of cartPriceList */}
 
                   <Button className="mt-3">Checkout</Button>

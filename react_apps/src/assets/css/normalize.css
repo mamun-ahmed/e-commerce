@@ -334,3 +334,22 @@ background-position: center center;
     font-size: 17px;
     font-weight: 600;
 }
+
+/*Scroll Bars Style*/
+
+.webScrollbar::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: rgb(228, 228, 228);
+}
+
+.webScrollbar::-webkit-scrollbar{
+	width: 5px;
+	background-color: #3897cf;
+}
+
+.webScrollbar::-webkit-scrollbar-thumb{
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #3897cf;
+}

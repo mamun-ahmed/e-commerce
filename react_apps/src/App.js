@@ -18,6 +18,7 @@ import PaymentPage from './pages/users/PaymentPage';
 import Home from './pages/Home';
 import OfferPage from './pages/offerPage';
 import CartPage from './pages/CartPage';
+import CheckoutPage from './pages/CheckoutPage';
 
 function App() {
   return (
@@ -59,7 +60,10 @@ function App() {
       <Route path="/cart">
         <CartPage />
       </Route>
-
+      <Route path="/checkout">
+        <CheckoutPage />
+      </Route>
+        
      </Switch>
    </Router>
   );

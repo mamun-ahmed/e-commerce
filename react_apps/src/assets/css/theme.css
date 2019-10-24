@@ -610,7 +610,19 @@
   max-width: 155px;
 }
 .cartQntN{width: 10%;}
+
 /*Cart Page Style End*/
+
+.productCartList {
+  height: 130px;
+  overflow: auto;
+}
+.productValue li {
+  font-size: 18px;
+  color: #363636;
+  font-weight: 600;
+}
+/*Checkout Page Style End*/
 
 
   /*------------------------------------------------------------------------------*/
