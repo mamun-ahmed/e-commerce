@@ -627,6 +627,10 @@
 .asideBody {
   padding: 1rem;
 }
+.asideTitle {
+  margin-bottom: 2.8rem;
+  margin-top: 5rem;
+}
 .singleFilterCard {
   border-bottom: 1px solid #d4d4d4;
   padding-bottom: 1rem;
