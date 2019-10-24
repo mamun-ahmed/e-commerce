@@ -7,6 +7,7 @@ const UserProfile = () => {
   return (<>
 
     <div className="allWrapper">
+      
       <div className="headerTopBar clearfix bgBlack" id="headerTopBar">
         <Container fluid={true}>
           <Row className="justify-content-between">

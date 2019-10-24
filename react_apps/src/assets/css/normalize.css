@@ -293,6 +293,16 @@ a:hover {color: inherit;}
 .bgBlack {background-color: #333333;}
 .bgGray {background-color: #f6f6f6;}
 
+/* Section Background Image */
+.sectionGgImage {
+	background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sectionBgImg01 {
+  background-image: url('../images/bg_img_01.jpg');
+}
+
 
 /* --- sectionGap --------------------- */
 .secGap{padding-top:3rem;padding-bottom: 5rem;}

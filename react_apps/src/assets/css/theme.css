@@ -304,7 +304,6 @@
     padding: 0 1rem;
 }
 
-
 /* Radio Style End*/
 
 
@@ -352,6 +351,114 @@
 .cardTableStyle2 td{vertical-align: middle;}
 
 /*Card Table End*/
+.productCatCard {
+    padding: 15px;
+    border: 2px solid #000000;
+    border-radius: unset;
+}
+.productCatTitle {
+    text-transform: uppercase;
+    font-size: 23px;
+}
+/*Category Style End*/
+
+.sectionTitle {
+    text-transform: uppercase;
+}
+.sectionTitle span {
+    color: #3897cf;
+    text-transform: uppercase;
+}
+.singleFeature .card-body h4 {
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+.singleFeature .card-body p {
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/* Feature End */
+.footerLogo .logoText {
+    line-height: 25px;
+}
+.footerWidgetHeader {
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+.footerLinksList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+.footerLinksList li {
+    max-width: 50%;
+    width: 50%;
+    margin-bottom: 0.5rem;
+}
+.footerLinksList li a {
+    color: #404041;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footerLinksList li a:hover {
+    color: #3897cf;
+    margin-left: 5px;
+}
+
+.getInTouchList li a, .getInTouchList li p {
+    font-size: 18px;
+    color: #404041;
+    font-weight: 600;
+}
+.getInTouchList li {
+    margin-bottom: 0.5rem;
+}
+
+.footerSocial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.footerSocial li a {
+	font-size: 17px;
+    color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #333333;
+    margin-right: 10px;
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+    display: block;
+    text-align: center;
+}
+.footerSocial li a:hover {
+    color: #3897cf;
+    border: 2px solid #3897cf;
+}
+/* Footer Top End */
+.subscribeCard {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.subscribeCard .card-body {
+    border: 5px solid #000000;
+}
+.subscribeForm input {
+    width: 440px;
+    margin-right: 10px;
+    border: 1px solid #000000;
+    background-color: transparent;
+}
+/* Subscribe Form Sectoin End */
+
+/*Home Page Style End*/
 
 
   /*------------------------------------------------------------------------------*/
