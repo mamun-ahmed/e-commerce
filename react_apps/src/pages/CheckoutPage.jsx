@@ -94,14 +94,7 @@ const CheckoutPage = () => {
                     </Col>{/* end of Col */}
 
                     <Col sm={12}>
-                      <Tab.Content>
-                        <Tab.Pane eventKey="first">
-                          <Sonnet />
-                        </Tab.Pane>
-                        <Tab.Pane eventKey="second">
-                          <Sonnet />
-                        </Tab.Pane>
-                      </Tab.Content>
+                      
                     </Col>{/* end of Col */}
 
                   </Row>{/* end of Row */}

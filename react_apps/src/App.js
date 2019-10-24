@@ -19,6 +19,7 @@ import Home from './pages/Home';
 import OfferPage from './pages/offerPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
+import FavoritesPage from './pages/FavoritesPage';
 
 function App() {
   return (
@@ -63,7 +64,9 @@ function App() {
       <Route path="/checkout">
         <CheckoutPage />
       </Route>
-        
+      <Route path="/favorites">
+        <FavoritesPage />
+      </Route>
      </Switch>
    </Router>
   );

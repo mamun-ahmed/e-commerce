@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Container, Row, Col, Card, Form, Button} from 'react-bootstrap';
+import {Container, Row, Col, Card, Form, Button, Breadcrumb} from 'react-bootstrap';
 
 //Payment Icon Images
 import paypalIcon from '../assets/images/paypal_icon_img.png';
@@ -9,14 +9,11 @@ import visaIcon from '../assets/images/visa_icon_img.png';
 
 // Product Images
 import bookImage1 from '../assets/images/books/book_img_01.jpg';
-import blogPostImage1 from '../assets/images/post_img_01.jpg';
 
-
-const offerPage = () => {
+const FavoritesPage = () => {
   return (<>
 
     <div className="allWrapper">
-
       <div className="headerTopBar clearfix bgBlack" id="headerTopBar">
         <Container>
           <Row className="justify-content-between">
@@ -81,239 +78,169 @@ const offerPage = () => {
 
       <main className="mainContent clearfix" id="mainContent">
 
-        <section className="offerBanner clearfix sectionBgImage sectionBgImg02" id="offerBanner">
-          <Container className="container">
-            <Row className="align-items-center">
-              <Col sm="6">
-                <div className="offerBannerCard text-center">
-                  <h1 className="offerBannerTitle mb-3">Back to school offer</h1>
-                  <h2 className="discountTxt mb-3">50%</h2>
-                  <h3 className="offerBannerPara mb-3">On all biology books</h3>
-                  <Link to="#" className="btn offerBannerBtn shadow">Shop now <i className="fas fa-arrow-right"></i></Link>
-                </div>{/* end of bannerCard */}
-              </Col>{/* end of Col */}
-            </Row>{/* end of Row */}
-          </Container>{/* end of Container */}
-        </section>{/* end of banner */}
-
-        <section class="newProduct productView secGap bgGray clearfix" id="newProduct">
+        <section className="sectionBreadcrumb secGap clearfix pb-0" id="sectionBreadcrumb">
           <Container>
             <Row>
-              <Col className="text-center">
-                <h2 className="sectionTitle mb-5"><span>New</span> Book</h2>
-              </Col>{/* end of Col */}
-            </Row>{/* end of Row */}
-
-            <Row className="justify-content-between">
-
-              <Col className="col-auto">
-                <Card className="productCard border-0 bg-transparent">
-                  <div className="productMedia mb-3 bg-white">
-                    <img src={bookImage1} alt="" />
-                  </div>{/* end of productMedia */}
-
-                  <div className="productContent">
-                    <Link to="#"><h4 className="productTitle mb-1">Maths time for class 1</h4></Link> 
-                    <h5 className="authorName mb-1">Author name</h5>
-                    <p className="productPrice">$ 43.00</p>
-                  </div>{/* end of productContent */}
-                </Card>{/* end of productCard */}
-              </Col>{/* end of Col */}
-              
-              <Col className="col-auto">
-                <Card className="productCard border-0 bg-transparent">
-                  <div className="productMedia mb-3 bg-white">
-                    <img src={bookImage1} alt="" />
-                  </div>{/* end of productMedia */}
-
-                  <div className="productContent">
-                    <Link to="#"><h4 className="productTitle mb-1">Maths time for class 1</h4></Link> 
-                    <h5 className="authorName mb-1">Author name</h5>
-                    <p className="productPrice">$ 43.00</p>
-                  </div>{/* end of productContent */}
-                </Card>{/* end of productCard */}
-              </Col>{/* end of Col */}
-
-              <Col className="col-auto">
-                <Card className="productCard border-0 bg-transparent">
-                  <div className="productMedia mb-3 bg-white">
-                    <img src={bookImage1} alt="" />
-                  </div>{/* end of productMedia */}
-
-                  <div className="productContent">
-                    <Link to="#"><h4 className="productTitle mb-1">Maths time for class 1</h4></Link> 
-                    <h5 className="authorName mb-1">Author name</h5>
-                    <p className="productPrice">$ 43.00</p>
-                  </div>{/* end of productContent */}
-                </Card>{/* end of productCard */}
-              </Col>{/* end of Col */}
-
-              <Col className="col-auto">
-                <Card className="productCard border-0 bg-transparent">
-                  <div className="productMedia mb-3 bg-white">
-                    <img src={bookImage1} alt="" />
-                  </div>{/* end of productMedia */}
-
-                  <div className="productContent">
-                    <Link to="#"><h4 className="productTitle mb-1">Maths time for class 1</h4></Link> 
-                    <h5 className="authorName mb-1">Author name</h5>
-                    <p className="productPrice">$ 43.00</p>
-                  </div>{/* end of productContent */}
-                </Card>{/* end of productCard */}
-              </Col>{/* end of Col */}
-
-              <Col className="col-auto">
-                <Card className="productCard border-0 bg-transparent">
-                  <div className="productMedia mb-3 bg-white">
-                    <img src={bookImage1} alt="" />
-                  </div>{/* end of productMedia */}
-
-                  <div className="productContent">
-                    <Link to="#"><h4 className="productTitle mb-1">Maths time for class 1</h4></Link> 
-                    <h5 className="authorName mb-1">Author name</h5>
-                    <p className="productPrice">$ 43.00</p>
-                  </div>{/* end of productContent */}
-                </Card>{/* end of productCard */}
-              </Col>{/* end of Col */}
-
-            </Row>{/* end of Row */}
-          </Container>{/* end of Container */}
-        </section>{/* end of newProduct */}
-
-        <section className="blogArea secGap clearfix" id="blogArea">
-          <Container>
-            <Row>
-              <Col sm="8">
-                <article className="singleArticle articleArea">
-                  <div className="articleMedia">
-                    <img src={blogPostImage1} alt="" />
-                  </div>{/* end of articleMedia */}
-
-                  <div className="articleBody p-5">
-                    <h2 className="postTitle mb-2"><Link to="#">New books on math</Link></h2>
-                    <p className="postPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                  </div>{/* end of articleBody */}
-                </article>{/* end of singleArticle */}
-              </Col>{/* end of Col */}
-
-              <Col sm="4">
-                <article className="singleArticle articleArea">
-                  <div className="articleMedia">
-                    <img src={blogPostImage1} alt="" />
-                  </div>{/* end of articleMedia */}
-
-                  <div className="articleBody p-3">
-                    <h2 className="postTitle mb-1"><Link to="#">Environment programm</Link></h2>
-                    <p className="postPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                  </div>{/* end of articleBody */}
-                </article>{/* end of singleArticle */}
-
-                <article className="singleArticle articleArea mt-3">
-                  <div className="articleMedia">
-                    <img src={blogPostImage1} alt="" />
-                  </div>{/* end of articleMedia */}
-
-                  <div className="articleBody p-3">
-                    <h2 className="postTitle mb-1"><Link to="#">Environment programm</Link></h2>
-                    <p className="postPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
-                    </div>{/* end of articleBody */}
-                </article>{/* end of singleArticle */}
-              </Col>{/* end of Col */}
-
-            </Row>{/* end of Row */}
-          </Container>{/* end of Container */}
-        </section>{/* end of blogArea */}
-
-        <section className="actualProduct productView secGap clearfix" id="newProduct">
-          <Container>
-            <Row className="justify-content-between align-items-center mb-5">
               <Col>
-                <h2 className="sectionTitle"><span>Actual </span> New</h2>
-              </Col>{/* end of Col */}
-
-              <Col className="text-right">
-                <Link to="#" className="btn linkBtn">View more</Link>
+                <Breadcrumb>
+                  <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+                  <Breadcrumb.Item active>Favorites</Breadcrumb.Item>
+                </Breadcrumb>{/* end of Breadcrumb */}
               </Col>{/* end of Col */}
             </Row>{/* end of Row */}
 
-            <Row className="justify-content-between">
+          </Container>{/* end of Container */}
+        </section>{/* end of Breadcrumb */}
+
+        <section className="chooseCategory clearfix" id="chooseCategory">
+          <Container>
+            <Row>
+              <Col>
+                <div className="contentArea text-center mt-5 mb-5">
+                  <h2 className="sectionTitle mb-3">You don’t have any <span>Favorites</span></h2>
+                  <p>It’s not a problem. Just choose a category you’re intrested in and add goods to favorites list</p>
+                </div>{/* end of contentArea */}
+              </Col>{/* end of Col */}
+            </Row>{/* end of Row */}
+
+            <Row>
+              <Col>
+                <Card className="border-0">
+                  <Card.Body className="p-0">
+                    
+                    <div className="cardContentDetails pt-5 pb-5 mb-5 bgGray clearfix">
+                      <Row>
+                        <Col sm="3">
+                          <h3 className="cardWidgetTitle mb-3">Kindergarten</h3>
+                          <ul className="cardWidgetList text-center">
+                            <li><Link to="#">Pre 1</Link></li>
+                            <li><Link to="#">Pre 2</Link></li>
+                            <li><Link to="#">Pre 3</Link></li>
+                          </ul>{/* end of cardWidgetList */}
+                        </Col>{/* end of Col */}
+
+                        <Col sm="3">
+                          <h3 className="cardWidgetTitle mb-3">Primary school</h3>
+                          <ul className="cardWidgetList cardWidgetList2 text-center">
+                            <li><Link to="#">Class 1</Link></li>
+                            <li><Link to="#">Class 2</Link></li>
+                            <li><Link to="#">Class 3</Link></li>
+                            <li><Link to="#">Class 4</Link></li>
+                            <li><Link to="#">Class 5</Link></li>
+                            <li><Link to="#">Class 6</Link></li>
+                            <li><Link to="#">Class 7</Link></li>
+                            <li><Link to="#">Class 8</Link></li>
+                          </ul>{/* end of cardWidgetList */}
+                        </Col>{/* end of Col */}
+
+                        <Col sm="3">
+                          <h3 className="cardWidgetTitle mb-3">Secondary school</h3>
+                          <ul className="cardWidgetList text-center">
+                            <li><Link to="#">Form 1</Link></li>
+                            <li><Link to="#">Form 2</Link></li>
+                            <li><Link to="#">Form 3</Link></li>
+                            <li><Link to="#">Form 4</Link></li>
+                          </ul>{/* end of cardWidgetList */}
+                        </Col>{/* end of Col */}
+
+                        <Col sm="3">
+                          <h3 className="cardWidgetTitle mb-3">Stationery</h3>
+                          <ul className="cardWidgetList text-center">
+                            <li><Link to="#">Stationery</Link></li>
+                            <li><Link to="#">Stationery</Link></li>
+                            <li><Link to="#"><strong>Bibles</strong></Link></li>
+                            <li><Link to="#">Bibles</Link></li>
+                          </ul>{/* end of cardWidgetList */}
+                        </Col>{/* end of Col */}
+                      </Row>{/* end of Row */}
+                    </div>{/* end of cardContentDetails */}
+
+                  </Card.Body>{/* end of Card.Body */}
+                </Card>{/* end of Card */}
+              </Col>{/* end of Col */}
+            </Row>{/* end of Row */}
+
+          </Container>{/* end of Container */}
+        </section>{/* end of chooseCategory */}
+        
+        <section className="favoritesItems secGap clearfix" id="favoritesItems">
+          <Container>
+            <Row className="mt-5 mb-5 justify-content-between">
 
               <Col className="col-auto">
-                <div className="card productCard border-0 bg-transprant">
+                <Card className="productCard border-0 bg-transprant">
                   <div className="productMedia mb-3 bgGray">
                     <img src={bookImage1} alt="" />
                   </div>{/* end of productMedia */}
 
                   <div className="productContent">
-                   <Link to="#"><h4 className="productTitle mb-1">Maths time for class 1</h4></Link> 
+                    <Link to="#"> <h4 className="productTitle mb-1">Maths time for class 1</h4> <span className="favoritIcon"><i className="fas fa-star"></i></span></Link>
                     <h5 className="authorName mb-1">Author name</h5>
                     <p className="productPrice">$ 43.00</p>
                   </div>{/* end of productContent */}
-                </div>{/* end of productCard */}
+                </Card>{/* end of productCard */}
               </Col>{/* end of Col */}
               
-
               <Col className="col-auto">
-                <div className="card productCard border-0 bg-transprant">
+                <Card className="productCard border-0 bg-transprant">
                   <div className="productMedia mb-3 bgGray">
                     <img src={bookImage1} alt="" />
                   </div>{/* end of productMedia */}
 
                   <div className="productContent">
-                   <Link to="#"><h4 className="productTitle mb-1">Maths time for class 1</h4></Link> 
+                    <Link to="#"> <h4 className="productTitle mb-1">Maths time for class 1</h4> <span className="favoritIcon"><i className="fas fa-star"></i></span></Link>
                     <h5 className="authorName mb-1">Author name</h5>
                     <p className="productPrice">$ 43.00</p>
                   </div>{/* end of productContent */}
-                </div>{/* end of productCard */}
+                </Card>{/* end of productCard */}
               </Col>{/* end of Col */}
-              
 
               <Col className="col-auto">
-                <div className="card productCard border-0 bg-transprant">
+                <Card className="productCard border-0 bg-transprant">
                   <div className="productMedia mb-3 bgGray">
                     <img src={bookImage1} alt="" />
                   </div>{/* end of productMedia */}
 
                   <div className="productContent">
-                   <Link to="#"><h4 className="productTitle mb-1">Maths time for class 1</h4></Link> 
+                    <Link to="#"> <h4 className="productTitle mb-1">Maths time for class 1</h4> <span className="favoritIcon"><i className="fas fa-star"></i></span></Link>
                     <h5 className="authorName mb-1">Author name</h5>
                     <p className="productPrice">$ 43.00</p>
                   </div>{/* end of productContent */}
-                </div>{/* end of productCard */}
+                </Card>{/* end of productCard */}
               </Col>{/* end of Col */}
-              
+
               <Col className="col-auto">
-                <div className="card productCard border-0 bg-transprant">
+                <Card className="productCard border-0 bg-transprant">
                   <div className="productMedia mb-3 bgGray">
                     <img src={bookImage1} alt="" />
                   </div>{/* end of productMedia */}
 
                   <div className="productContent">
-                   <Link to="#"><h4 className="productTitle mb-1">Maths time for class 1</h4></Link> 
+                    <Link to="#"> <h4 className="productTitle mb-1">Maths time for class 1</h4> <span className="favoritIcon"><i className="fas fa-star"></i></span></Link>
                     <h5 className="authorName mb-1">Author name</h5>
                     <p className="productPrice">$ 43.00</p>
                   </div>{/* end of productContent */}
-                </div>{/* end of productCard */}
+                </Card>{/* end of productCard */}
               </Col>{/* end of Col */}
 
               <Col className="col-auto">
-                <div className="card productCard border-0 bg-transprant">
+                <Card className="productCard border-0 bg-transprant">
                   <div className="productMedia mb-3 bgGray">
                     <img src={bookImage1} alt="" />
                   </div>{/* end of productMedia */}
 
                   <div className="productContent">
-                   <Link to="#"><h4 className="productTitle mb-1">Maths time for class 1</h4></Link> 
+                    <Link to="#"> <h4 className="productTitle mb-1">Maths time for class 1</h4> <span className="favoritIcon"><i className="fas fa-star"></i></span></Link>
                     <h5 className="authorName mb-1">Author name</h5>
                     <p className="productPrice">$ 43.00</p>
                   </div>{/* end of productContent */}
-                </div>{/* end of productCard */}
+                </Card>{/* end of productCard */}
               </Col>{/* end of Col */}
-            
+
             </Row>{/* end of Row */}
           </Container>{/* end of Container */}
-        </section>{/* end of newProduct */}
-
+        </section>{/* end of favoritesItems */}
+        
         <section className="mailSubscribe clearfix sectionBgImage sectionBgImg01 secGap" id="mailSubscribe">
           <Container className="container">
             <Row className="justify-content-center">
@@ -426,10 +353,11 @@ const offerPage = () => {
         </Container>{/* end of Container */}
       </div>{/* end of footerBottom */}
 
-    </div>{/* end of allWrapper */}
 
+    </div>{/* end of allWrapper */}
+    
 
   </>);
 }
 
-export default offerPage;
+export default FavoritesPage;
