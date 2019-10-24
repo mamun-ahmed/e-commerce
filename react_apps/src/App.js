@@ -9,6 +9,9 @@ import Forgotpass from './pages/auth/Forgotpass';
 import Changepass from './pages/auth/Changepass';
 import VerifyCode from './pages/auth/VerifyCode';
 import UserProfile from './pages/users/UserProfile';
+import Subscription from './pages/users/Subscription';
+import OrderPage from './pages/users/OrderPage';
+import PaymentPage from './pages/users/PaymentPage';
 
 function App() {
   return (
@@ -29,8 +32,17 @@ function App() {
        <Route path="/verify-code">
         <VerifyCode />
        </Route>
-       <Route path="/user-profile">
+       <Route path="/profile-settings">
         <UserProfile />
+       </Route>
+       <Route path="/email-subscription">
+         <Subscription />>
+       </Route>
+       <Route path="/order">
+        <OrderPage />>
+       </Route>
+       <Route path="/payment-methods">
+        <PaymentPage />
        </Route>
      </Switch>
    </Router>

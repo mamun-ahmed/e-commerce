@@ -7,7 +7,7 @@ import './assets/css/auth.css';
 const Forgotpass = () => {
   return (<>
     <div className="AllWrapper fullHeight">
-      <header class="header clearfix" id="header">
+      <header class="header authHeader clearfix" id="header">
         <Container fluid={true}>
           <Row>
             <Col sm={6}>

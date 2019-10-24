@@ -1,9 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {Container, Row, Col, Card, Form, Button} from 'react-bootstrap';
-import './assets/css/user.css';
+import {Container, Row, Col, Card, Button, Form} from 'react-bootstrap';
 
-const UserProfile = () => {
+const Subscription = () => {
   return (<>
 
     <div className="allWrapper">
@@ -89,11 +88,11 @@ const UserProfile = () => {
                       <Link className="nav-link" to="#"><i className="fas fa-wallet"></i> Payment methods</Link>
                     </li>{/* end of li */}
 
-                    <li className="nav-item active">
+                    <li className="nav-item">
                       <Link className="nav-link" to="#"><i className="fas fa-cog"></i> Profile settings</Link>
                     </li>{/* end of li */}
 
-                    <li className="nav-item">
+                    <li className="nav-item active">
                       <Link className="nav-link" to="#"><i className="far fa-envelope"></i> Email subscription</Link>
                     </li>{/* end of li */}
 
@@ -113,87 +112,52 @@ const UserProfile = () => {
 
                   <Container fluid="{true}">
                     <Row>
-                      <Col>
+                      <Col sm="12">
                         <Card>
-                          <Card.Body>
-                            <div className="userProfileBody clearfix" id="userProfileBody">
-                              <h2 className="cardSecTitle mb-4">Profile settings</h2>
-                              <Form className="profileSettingsForm">
-                                <Row>
-                                  <Col sm="6">
-                                    <Form.Group controlId="exampleForm.ControlSelect1">
-                                      <Form.Label>Category</Form.Label>
-                                      <Form.Control as="select">
-                                        <option>Secondary school</option>
-                                        <option>Secondary school 2</option>
-                                        <option>Secondary school 3</option>
-                                        <option>Secondary school 4</option>
-                                        <option>Secondary school 5</option>
-                                      </Form.Control>
-                                    </Form.Group>{/* end of Form.Group */}
-                                  </Col>{/* end of Col */}
+                          <Card.Body className="pt-5">
+                            <h2 className="cardSecTitle mb-3">Manage email subscription</h2>
+                            <h5 className="cardSubtitle mb-2">Please choose which types of emails you would like to receive from us</h5>
 
-                                  <Col sm="6">
-                                    <Form.Group controlId="firstName">
-                                      <Form.Label>First Name</Form.Label>
-                                      <Form.Control type="text" />
-                                    </Form.Group>{/* end of Form.Group */}
-                                  </Col>{/* end of Col */}
+                            <Form className="profileSettingsForm">
+                              <Row>
 
-                                  <Col sm="6">
-                                    <Form.Group controlId="lastName">
-                                      <Form.Label>Last Name</Form.Label>
-                                      <Form.Control type="text" />
-                                    </Form.Group>{/* end of Form.Group */}
-                                  </Col>{/* end of Col */}
+                                <Col sm="12">
+                                  <Form.Group controlId="formCheckbox1" className="formCheckbox mt-2">
+                                    <Form.Check type="checkbox" label="Announcements" />
+                                  </Form.Group>{/* end of Form.Group */}
+                                </Col>{/* end of col */}
+                                
+                                <Col sm="12">
+                                  <Form.Group controlId="formCheckbox2" className="formCheckbox mt-2">
+                                    <Form.Check type="checkbox" label="Sale invitations" />
+                                  </Form.Group>{/* end of Form.Group */}
+                                </Col>{/* end of col */}
+                                
+                                <Col sm="12">
+                                  <Form.Group controlId="formCheckbox3" className="formCheckbox mt-2">
+                                    <Form.Check type="checkbox" label="Weekly newsletter" />
+                                  </Form.Group>{/* end of Form.Group */}
+                                </Col>{/* end of col */}
+                                
+                                <Col sm="12">
+                                  <h5 className="cardSubtitle mt-3 mb-2">Click below to unsubscribe from all emails</h5>
+                                </Col>{/* end of col */}
+                                
+                                <Col sm="12">
+                                  <Form.Group controlId="formCheckbox4" className="formCheckbox mt-2">
+                                    <Form.Check type="checkbox" label="Unsubscribe" />
+                                  </Form.Group>{/* end of Form.Group */}
+                                </Col>{/* end of col */}
+                                
+                                <Col sm="12">
+                                  <Button variant="primary" className="mt-3" type="submit"> Save </Button>
+                                </Col>{/* end of col */}
 
-                                  <Col sm="6">
-                                    <Form.Group controlId="userEmail">
-                                      <Form.Label>Email Address</Form.Label>
-                                      <Form.Control type="email" />
-                                    </Form.Group>{/* end of Form.Group */}
-                                  </Col>{/* end of Col */}
+                              </Row>{/* end of row */}
 
-                                  <Col sm="6">
-                                    <Form.Group controlId="userPhone">
-                                      <Form.Label>Phone Number</Form.Label>
-                                      <Form.Control type="text" />
-                                    </Form.Group>{/* end of Form.Group */}
-                                  </Col>{/* end of Col */}
+                            </Form>{/* end of profileSettingsForm */}
 
-                                  <Col sm="12">
-                                    <hr class="hrBorder" />
-                                  </Col>{/* end of Col */}
-
-                                  <Col sm="6">
-                                    <Form.Group controlId="currentPassword">
-                                      <Form.Label>Current password</Form.Label>
-                                      <Form.Control type="password" />
-                                    </Form.Group>{/* end of Form.Group */}
-                                  </Col>{/* end of Col */}
-
-                                  <Col sm="6">
-                                    <Form.Group controlId="newPassword">
-                                      <Form.Label>Create new password</Form.Label>
-                                      <Form.Control type="password" />
-                                    </Form.Group>{/* end of Form.Group */}
-                                  </Col>{/* end of Col */}
-
-                                  <Col sm="6">
-                                    <Form.Group controlId="repeatNewPassword">
-                                      <Form.Label>Repeat new password</Form.Label>
-                                      <Form.Control type="password" />
-                                    </Form.Group>{/* end of Form.Group */}
-                                  </Col>{/* end of Col */}
-
-                                  <Col sm="12">
-                                    <Button variant="primary" type="submit">Save</Button>
-                                  </Col>{/* end of Col */}
-                                </Row>{/* end of Row */}
-                              </Form>{/* end of userProfile */}
-                            </div>{/* end of userProfile */}
                           </Card.Body>{/* end of Card.Body */}
-
                         </Card>{/* end of Card */}
                       </Col>{/* end of Col */}
                     </Row>{/* end of Row */}
@@ -207,10 +171,9 @@ const UserProfile = () => {
         </Container>{/* end of Container */}
       </div>{/* end of userBodyArea */}
 
-
     </div>{/* end of allWrapper */}
     
   </>);
 }
 
-export default UserProfile;
+export default Subscription;

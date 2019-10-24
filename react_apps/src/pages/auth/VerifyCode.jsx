@@ -7,7 +7,7 @@ const VerifyCode = () => {
   return (<>
     
     <div class="allWrapper fullHeight">
-      <header className="header clearfix" id="header">
+      <header className="header authHeader clearfix" id="header">
         <Container fluid={true}>
           <Row>
             <Col sm={6}>

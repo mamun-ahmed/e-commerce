@@ -1,12 +1,13 @@
-html,body, .fullHeight, #root{
+/* html,body, .fullHeight, #root{
     height: 100%!important;
     position: relative;
-}
+} */
 
-.header{
+.authHeader{
     margin-left: 4rem;
     position: absolute;
 }
+.loginMainArea{height: 100vh;}
 
 /*Login Page*/
 
@@ -84,7 +85,7 @@ html,body, .fullHeight, #root{
 /*                    Width : 1050px
 /*------------------------------------------------------------------------------*/
 @media only screen and (max-width: 1050px){
-    .header{z-index: 9999;margin-left: 0px;}
+    .authHeader{z-index: 9999;margin-left: 0px;}
     .loginMainArea {
         position: relative;
         margin-left: 0px;

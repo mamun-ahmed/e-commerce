@@ -290,5 +290,9 @@ a:hover {color: inherit;}
 }
 
 /* Background Color */
-
 .bgBlack {background-color: #333333;}
+.bgGray {background-color: #f6f6f6;}
+
+
+/* --- sectionGap --------------------- */
+.secGap{padding-top:3rem;padding-bottom: 5rem;}

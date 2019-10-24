@@ -8,7 +8,7 @@ const Changepass = () => {
   return (<>
 
     <div className="allWrapper fullHeight">
-      <header className="header clearfix" id="header">
+      <header className="header authHeader clearfix" id="header">
         <Container fluid={true}>
           <Row>
             <Col sm={6}>
@@ -47,6 +47,7 @@ const Changepass = () => {
               </div>{/* end of formWrapper */}
 
             </Col>{/* end of Col */}
+            
           </Row>{/* end of Row  */}
         </Container>{/* end of Container  */}
       </main>{/* end of loginMainArea  */}
