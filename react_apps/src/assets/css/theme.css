@@ -624,6 +624,54 @@
 }
 /*Checkout Page Style End*/
 
+.asideBody {
+  padding: 1rem;
+}
+.singleFilterCard {
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.singleFilterCard h5 {
+  font-size: 20px;
+  color: #363636;
+  margin-bottom: 15px;
+}
+.filterList li a span {
+  font-size: 14px;
+  color: #888888;
+  padding-left: 10px;
+}
+.filterList li a {
+  font-size: 16px;
+  color: #363636;
+  font-weight: 600;
+  line-height: 30px;
+}
+.filterList li a:hover {
+  color: #3897cf;
+  margin-left: 2px;
+}
+.pageTitle, .pageTitle span {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.pageTitle span {
+  color: #3897cf;
+}
+.singleFilter label {
+  font-size: 18px;
+  color: #363636;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.filterSelect .form-control{
+  font-size: 17px;
+  color: #363636;
+  width: auto;
+}
+/*Shop Page Style End*/
+
 
   /*------------------------------------------------------------------------------*/
 /*                    Width : 767px

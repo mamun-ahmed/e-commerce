@@ -20,6 +20,7 @@ import OfferPage from './pages/offerPage';
 import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import FavoritesPage from './pages/FavoritesPage';
+import ShopPage from './pages/ShopPage';
 
 function App() {
   return (
@@ -67,6 +68,10 @@ function App() {
       <Route path="/favorites">
         <FavoritesPage />
       </Route>
+      <Route path="/shop">
+        <ShopPage />
+      </Route>
+
      </Switch>
    </Router>
   );
