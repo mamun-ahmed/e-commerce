@@ -220,7 +220,7 @@ const Home = () => {
           </Container>{/* end of Container */}
         </section>{/* end of ourPartners */}
 
-        <section className="mailSubscribe clearfix sectionGgImage sectionBgImg01 secGap" id="mailSubscribe">
+        <section className="mailSubscribe clearfix sectionBgImage sectionBgImg01 secGap" id="mailSubscribe">
           <Container className="container">
             <Row className="justify-content-center">
               <Col sm="10">
@@ -307,23 +307,23 @@ const Home = () => {
         </Container>{/* end of Container */}
       </footer>{/* end of footer */}
 
-      <div class="footerBottom clearfix pb-3" id="footerBottom">
+      <div className="footerBottom clearfix pb-3" id="footerBottom">
         <Container>
-          <hr class="hrBorder" />
-          <Row class="align-items-center justify-content-between">
+          <hr className="hrBorder" />
+          <Row className="align-items-center justify-content-between">
             <Col>
-              <p class="copyrights">© 2019 All Rights Reserved</p>
+              <p className="copyrights">© 2019 All Rights Reserved</p>
             </Col>{/* end of Col */}
 
             <Col sm="3">
-              <ul class="paymentsNav d-flex justify-content-between align-items-center">
-                <li class="paypal">
+              <ul className="paymentsNav d-flex justify-content-between align-items-center">
+                <li className="paypal">
                   <Link to="#" title="paypal"><img alt="paypal" src={paypalIcon} title="paypal" /></Link>
                 </li>{/* end of li */}
-                <li class="visa">
+                <li className="visa">
                   <Link href="#" title="visa"><img alt="visa card" src={visaIcon} title="visa card" /></Link>
                 </li>{/* end of li */}
-                <li class="master">
+                <li className="master">
                   <Link to="#" title="master card"><img alt="master card" src={masterCardIcon} title="master card" /></Link>
                 </li>{/* end of li */}
               </ul>{/* end of paymentsNav */}

@@ -294,13 +294,17 @@ a:hover {color: inherit;}
 .bgGray {background-color: #f6f6f6;}
 
 /* Section Background Image */
-.sectionGgImage {
-	background-position: center center;
+.sectionBgImage {
+background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .sectionBgImg01 {
   background-image: url('../images/bg_img_01.jpg');
+}
+
+.sectionBgImg02 {
+  background-image: url('../images/banner_img_01.jpg');
 }
 
 

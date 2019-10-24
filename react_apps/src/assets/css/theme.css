@@ -458,6 +458,104 @@
 }
 /* Subscribe Form Sectoin End */
 
+.offerBanner .row {
+    min-height: 550px;
+}
+.offerBannerTitle {
+    text-transform: uppercase;
+}
+.discountTxt {
+  color: #3897cf;
+  font-size: 90px;
+  font-style: italic;
+  position: relative;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.discountTxt:after, .discountTxt:before {
+  content: '';
+  position: absolute;
+  top: 45px;
+  width: 60px;
+  height: 3px;
+  background-color: #3897cf;
+}
+.discountTxt:before {
+  right: 0;
+}
+.discountTxt:after {
+  left: 0;
+}
+.offerBannerPara {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.offerBannerCard .offerBannerBtn {
+  color: #3897cf;
+  font-size: 15px;
+  max-width: 300px;
+  width: 300px;
+  min-height: 50px;
+  line-height: 50px;
+  background-color: #ffffff;
+}
+.offerBannerCard .offerBannerBtn:hover {
+  background-color: #3897cf;
+  color: #ffffff;
+}
+/* Offer Page End */
+
+.productMedia {
+  padding: 15px;
+  text-align: center;
+  min-height: 250px;
+}
+.productTitle {
+  color: #3897cf;
+}
+.authorName {
+  font-size: 16px;
+  color: #363636;
+}
+.productPrice {
+  font-size: 15px;
+  color: #363636;
+}
+/* Product Section End */
+
+.singleArticle {
+  position: relative;
+}
+.singleArticle:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0,0,0,0.1825105042016807) 0%, rgba(0,0,0,0.7819502801120448) 100%);
+}
+.postTitle a {
+  color: #ffffff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.articleArea .articleBody {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+}
+.postPara {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 20px;
+}
+.linkBtn {
+  color: #ffffff!important;
+  font-size: 14px!important;
+}
+/* Blog Section End */
+
 /*Home Page Style End*/
 
 
