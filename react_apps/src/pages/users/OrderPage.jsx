@@ -115,7 +115,7 @@ const OrderPage = () => {
                     <Row>
                       <Col sm="12">
                         <Card>
-                        <Card.Body>
+                          <Card.Body>
                             <div className="cardHeadDetails clearfix pt-5 text-center">
                               <div className="orderMedia">
                                 <img src="assets/images/order_page_icon_img.png" alt="" />

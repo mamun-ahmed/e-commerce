@@ -17,6 +17,7 @@ import PaymentPage from './pages/users/PaymentPage';
 // Theme Page
 import Home from './pages/Home';
 import OfferPage from './pages/offerPage';
+import CartPage from './pages/CartPage';
 
 function App() {
   return (
@@ -54,6 +55,9 @@ function App() {
       </Route>
       <Route path="/offer">
         <OfferPage />
+      </Route>
+      <Route path="/cart">
+        <CartPage />
       </Route>
 
      </Switch>

@@ -173,6 +173,10 @@
     font-weight: 600;
     line-height: 35px;
 }
+.cardWidgetList li a:hover{
+  margin-left: 5px;
+  color: #3897cf;
+}
 .cardWidgetList2{
     display: flex;
     flex-wrap: wrap;
@@ -557,6 +561,56 @@
 /* Blog Section End */
 
 /*Home Page Style End*/
+
+.breadcrumb-item, .breadcrumb-item a {
+  font-size: 16px;
+  color: #363636;
+}
+.breadcrumb-item a {
+  text-decoration: underline!important;
+}
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+.cartProductMedia {
+  max-width: 110px;
+  padding: 10px;
+  max-height: 140px;
+}
+.cartProductTitle h3 {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px;
+}
+.cartTableBody td{
+  vertical-align: middle;
+}
+.productQut {
+  font-size: 16px;
+  color: #363636;
+  font-weight: 600;
+  width: 50%;
+}
+.btnGraySm {
+  color: #363636;
+  background-color: #e2e2e2;
+  font-size: 16px;
+  min-height: 25px;
+  line-height: 25px;
+  text-transform: capitalize;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+.cartPriceList li, .cartPriceList li span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #363636;
+}
+.cartPromo .form-control {
+  max-width: 155px;
+}
+.cartQntN{width: 10%;}
+/*Cart Page Style End*/
 
 
   /*------------------------------------------------------------------------------*/

@@ -104,7 +104,7 @@ const offerPage = () => {
               </Col>{/* end of Col */}
             </Row>{/* end of Row */}
 
-            <Row>
+            <Row className="justify-content-between">
 
               <Col className="col-auto">
                 <Card className="productCard border-0 bg-transparent">
@@ -231,12 +231,12 @@ const offerPage = () => {
                 <h2 className="sectionTitle"><span>Actual </span> New</h2>
               </Col>{/* end of Col */}
 
-              <div className="text-right">
+              <Col className="text-right">
                 <Link to="#" className="btn linkBtn">View more</Link>
-              </div>{/* end of Col */}
+              </Col>{/* end of Col */}
             </Row>{/* end of Row */}
 
-            <Row>
+            <Row className="justify-content-between">
 
               <Col className="col-auto">
                 <div className="card productCard border-0 bg-transprant">
