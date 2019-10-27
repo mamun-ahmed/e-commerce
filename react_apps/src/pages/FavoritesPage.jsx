@@ -8,7 +8,10 @@ import masterCardIcon from '../assets/images/master_card_icon_img.png';
 import visaIcon from '../assets/images/visa_icon_img.png';
 
 // Product Images
-import bookImage1 from '../assets/images/books/book_img_01.jpg';
+import {NewBookDB} from "../inc/offerPage/NewBook";
+import {NewBookComponent} from "../components/offerPageComponents/NewBookComponent";
+import {NewsLetterComponent} from "../components/offerPageComponents/NewsLetterComponent";
+import FooterComponent from '../components/FooterComponent/FooterComponent';
 
 const FavoritesPage = () => {
   return (<>
@@ -167,75 +170,16 @@ const FavoritesPage = () => {
           <Container>
             <Row className="mt-5 mb-5 justify-content-between">
 
-              <Col className="col-auto">
-                <Card className="productCard border-0 bg-transprant">
-                  <div className="productMedia mb-3 bgGray">
-                    <img src={bookImage1} alt="" />
-                  </div>{/* end of productMedia */}
+              {NewBookDB.map((newBook, index) => <NewBookComponent
+                  key={index}
+                  ImageBg="bgGray"
+                  BookImage={newBook.Img}
+                  ProductTitle={newBook.Title}
+                  AuthorName={newBook.Author}
+                  ProductPrice={newBook.Price}
+              />)
+              }
 
-                  <div className="productContent">
-                    <Link to="#"> <h4 className="productTitle mb-1">Maths time for class 1</h4> <span className="favoritIcon"><i className="fas fa-star"></i></span></Link>
-                    <h5 className="authorName mb-1">Author name</h5>
-                    <p className="productPrice">$ 43.00</p>
-                  </div>{/* end of productContent */}
-                </Card>{/* end of productCard */}
-              </Col>{/* end of Col */}
-              
-              <Col className="col-auto">
-                <Card className="productCard border-0 bg-transprant">
-                  <div className="productMedia mb-3 bgGray">
-                    <img src={bookImage1} alt="" />
-                  </div>{/* end of productMedia */}
-
-                  <div className="productContent">
-                    <Link to="#"> <h4 className="productTitle mb-1">Maths time for class 1</h4> <span className="favoritIcon"><i className="fas fa-star"></i></span></Link>
-                    <h5 className="authorName mb-1">Author name</h5>
-                    <p className="productPrice">$ 43.00</p>
-                  </div>{/* end of productContent */}
-                </Card>{/* end of productCard */}
-              </Col>{/* end of Col */}
-
-              <Col className="col-auto">
-                <Card className="productCard border-0 bg-transprant">
-                  <div className="productMedia mb-3 bgGray">
-                    <img src={bookImage1} alt="" />
-                  </div>{/* end of productMedia */}
-
-                  <div className="productContent">
-                    <Link to="#"> <h4 className="productTitle mb-1">Maths time for class 1</h4> <span className="favoritIcon"><i className="fas fa-star"></i></span></Link>
-                    <h5 className="authorName mb-1">Author name</h5>
-                    <p className="productPrice">$ 43.00</p>
-                  </div>{/* end of productContent */}
-                </Card>{/* end of productCard */}
-              </Col>{/* end of Col */}
-
-              <Col className="col-auto">
-                <Card className="productCard border-0 bg-transprant">
-                  <div className="productMedia mb-3 bgGray">
-                    <img src={bookImage1} alt="" />
-                  </div>{/* end of productMedia */}
-
-                  <div className="productContent">
-                    <Link to="#"> <h4 className="productTitle mb-1">Maths time for class 1</h4> <span className="favoritIcon"><i className="fas fa-star"></i></span></Link>
-                    <h5 className="authorName mb-1">Author name</h5>
-                    <p className="productPrice">$ 43.00</p>
-                  </div>{/* end of productContent */}
-                </Card>{/* end of productCard */}
-              </Col>{/* end of Col */}
-
-              <Col className="col-auto">
-                <Card className="productCard border-0 bg-transprant">
-                  <div className="productMedia mb-3 bgGray">
-                    <img src={bookImage1} alt="" />
-                  </div>{/* end of productMedia */}
-
-                  <div className="productContent">
-                    <Link to="#"> <h4 className="productTitle mb-1">Maths time for class 1</h4> <span className="favoritIcon"><i className="fas fa-star"></i></span></Link>
-                    <h5 className="authorName mb-1">Author name</h5>
-                    <p className="productPrice">$ 43.00</p>
-                  </div>{/* end of productContent */}
-                </Card>{/* end of productCard */}
-              </Col>{/* end of Col */}
 
             </Row>{/* end of Row */}
           </Container>{/* end of Container */}
@@ -243,117 +187,12 @@ const FavoritesPage = () => {
         
         <section className="mailSubscribe clearfix sectionBgImage sectionBgImg01 secGap" id="mailSubscribe">
           <Container className="container">
-            <Row className="justify-content-center">
-              <Col sm="10">
-                <Card className="subscribeCard border-0 rounded-0">
-                  <Card.Body className="text-center pt-5 pb-5">
-                    <h1>Subscribe to our newsletter</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor<br /> enim ipsam voluptatem quia voluptas quia non numquam eius</p>
-                    
-                    <Form className="d-flex subscribeForm justify-content-center mt-3">
-
-                      <Form.Group controlId="mailSubscribe" className="mb-2">
-                        <Form.Control type="email" placeholder="Enter email" />
-                      </Form.Group>{/* end of Form.Group */}
-
-                      <Button type="submit" className="mb-2">Subscribe</Button>
-
-                    </Form>{/* end of Form */}
-                  </Card.Body>{/* end of Card.Body */}
-                </Card>{/* end of Card */}
-              </Col>{/* end of Col */}
-            </Row>{/* end of Row */}
+           <NewsLetterComponent/>
           </Container>{/* end of Container */}
         </section>{/* end of mailSubscribe */}
 
       </main>{/* end of mainContent */}
-
-      <footer className="footer clearfix bg-white pt-5 pb-5" id="footer">
-        <Container>
-          <Row>
-            <Col>
-              <div className="footerWidget">
-                <div className="footerLogo">
-                  <div className="logoWrapper">
-                    <h1 className="logoText"><Link to="#">LOGO</Link></h1>
-                  </div>{/*  end of logoWrapper */}
-                </div>{/*  end of footerLogo */}
-              </div>{/*  end of footerWidget */}
-            </Col> {/*  end of col */}
-
-            <Col sm="5">
-              <div className="footerWidget">
-                <h4 className="footerWidgetHeader">Information</h4>
-                <ul className="footerLinksList">
-                  <li><Link to="#">Order status</Link></li>
-                  <li><Link to="#">How to place an order</Link></li>
-                  <li><Link to="#">Return</Link></li>
-                  <li><Link to="#">Terms & Conditions</Link></li>
-                  <li><Link to="#">Delivery details</Link></li>
-                  <li><Link to="#">Privacy Policy</Link></li>
-                  <li><Link to="#">Blog</Link></li>
-                  <li><Link to="#">Our support center</Link></li>
-                </ul>{/*  end of footerLinksList */}
-              </div>{/*  end of footerWidget */}
-            </Col>{/*  end of col */}
-
-            <Col sm="2">
-              <div className="footerWidget">
-                <h4 className="footerWidgetHeader">Contact us</h4>
-                <ul className="getInTouchList">
-                  <li>
-                    <Link to="mailto:you@example.com" title="click to mail us">you@example.com</Link>
-                  </li>{/*  end of li */}
-                  <li>
-                    <Link to="tele:1234567890" title="click to call us">+(123) 456 7890</Link>
-                  </li>{/*  end of li */}
-                  <li>
-                    <p>Your long address, city, region, zip code</p>
-                  </li>{/*  end of li */}
-                </ul>{/*  end of getInTouchList */}
-              </div>{/*  end of footerWidget */}
-            </Col>{/*  end of col */}
-
-            <Col className="align-self-center">
-              <div className="footerWidget">
-                <ul className="footerSocial">
-                  <li className="facebook"><Link to="#"><i className="fab fa-facebook-f"></i></Link></li>
-                  <li className="facebook"><Link to="#"><i className="fab fa-instagram"></i></Link></li>
-                  <li className="facebook"><Link to="#"><i className="fab fa-twitter"></i></Link></li>
-                </ul>{/*  end of footerSocial */}
-              </div>{/*  end of footerWidget */}
-            </Col>{/*  end of col */}
-
-          </Row>{/* end of Row */}
-        </Container>{/* end of Container */}
-      </footer>{/* end of footer */}
-
-      <div className="footerBottom clearfix pb-3" id="footerBottom">
-        <Container>
-          <hr className="hrBorder" />
-          <Row className="align-items-center justify-content-between">
-            <Col>
-              <p className="copyrights">© 2019 All Rights Reserved</p>
-            </Col>{/* end of Col */}
-
-            <Col sm="3">
-              <ul className="paymentsNav d-flex justify-content-between align-items-center">
-                <li className="paypal">
-                  <Link to="#" title="paypal"><img alt="paypal" src={paypalIcon} title="paypal" /></Link>
-                </li>{/* end of li */}
-                <li className="visa">
-                  <Link href="#" title="visa"><img alt="visa card" src={visaIcon} title="visa card" /></Link>
-                </li>{/* end of li */}
-                <li className="master">
-                  <Link to="#" title="master card"><img alt="master card" src={masterCardIcon} title="master card" /></Link>
-                </li>{/* end of li */}
-              </ul>{/* end of paymentsNav */}
-            </Col>{/* end of Col */}
-          </Row>{/* end of Row */}
-        </Container>{/* end of Container */}
-      </div>{/* end of footerBottom */}
-
-
+      <FooterComponent/>
     </div>{/* end of allWrapper */}
     
 

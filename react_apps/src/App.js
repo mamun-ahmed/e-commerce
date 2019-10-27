@@ -21,6 +21,7 @@ import CartPage from './pages/CartPage';
 import CheckoutPage from './pages/CheckoutPage';
 import FavoritesPage from './pages/FavoritesPage';
 import ShopPage from './pages/ShopPage';
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
@@ -45,10 +46,10 @@ function App() {
         <UserProfile />
        </Route>
        <Route path="/email-subscription">
-         <Subscription />>
+         <Subscription />
        </Route>
        <Route path="/order">
-        <OrderPage />>
+        <OrderPage />
        </Route>
        <Route path="/payment-methods">
         <PaymentPage />
@@ -70,6 +71,9 @@ function App() {
       </Route>
       <Route path="/shop">
         <ShopPage />
+      </Route>
+      <Route path="/product">
+        <ProductPage />
       </Route>
 
      </Switch>

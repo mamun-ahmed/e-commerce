@@ -1,7 +1,10 @@
 import React from 'react';
-import { Container, Row, Col, Form, Button} from 'react-bootstrap';
+import { Container, Row, Col, Form,} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import './assets/css/auth.css';
+import SocialListCompoent from '../../components/authComponents/SocialListCompoent';
+import { InputFrom } from '../../components/FromComponents/InputComponent';
+import { ButtonComponents } from '../../components/ButtonComponents/ButtonComponents';
 
 const Login = () => {
   return (<>
@@ -18,32 +21,34 @@ const Login = () => {
 
           <Row>
             <Col sm={6}>
-              <div className="loginBodyContent clearfix" id="loginBody">
-                <h2 className="headTitle">Login to Your Account</h2>
-                <div className="socialLogin mb-4">
-                  <ul className="socialList mt-4 mb-4">
-                    <li className="googlePlus"><Link to="/"><i className="fab fa-google"></i></Link></li>
-                    <li className="facebook"><Link to="/"><i className="fab fa-facebook-f"></i></Link></li>
-                  </ul>
-                  <h4>OR</h4>
-                </div>{/* end of socialLogin */}
-              </div>{/* end of loginBodyContent */}
-
+              <SocialListCompoent/>
               <div className="formWrapper clearfix" id="formWrapper">
                 <Form>
-                  <Form.Group>
-                    <Form.Label htmlFor="email">Email</Form.Label>
-                    <Form.Control type="email" id="email" />
-                  </Form.Group>{/* end of Form.Group */}
+                  <InputFrom 
+                   LableId="email"
+                   TypeName="email"
+                   LableTitle="Email"
+                   Name="name"
+                   Value=""
+                   Placeholder="Enter Your Email"
+                  />
   
-                  <Form.Group>
-                    <Form.Label htmlFor="password">Password</Form.Label>
-                    <Form.Control type="password" id="password" />
-                  </Form.Group>{/* end of Form.Group */}
+                  <InputFrom 
+                   LableId="password"
+                   TypeName="password"
+                   LableTitle="Password"
+                   Name="password"
+                   Value=""
+                   Placeholder="Enter Your Password"
+                  />{/* end of Form.Group */}
 
-                  <Link className="linkText mb-3" to="/">Forgot password?</Link>
-                  <Button type="submit" className="btn submitBtn mb-3">LOGIN</Button>
-                  <p>Don’t have an account yet? <Link className="linkText" to="#">Sign up</Link></p>
+                  <Link className="linkText mb-3" to="/forgotpass">Forgot password?</Link>
+                  <ButtonComponents
+                    Type="submit"
+                    ClassName="btn submitBtn mb-3"
+                    Name="LOGIN"
+                  />
+                  <p>Don’t have an account yet? <Link className="linkText" to="/signup">Sign up</Link></p>
                   
   
                 </Form>{/* end of form */}
