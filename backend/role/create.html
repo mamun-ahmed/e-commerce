@@ -1,0 +1,975 @@
+<!doctype html>
+<html lang="en" class="cv_db_full_height">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title CSS -->
+    <title>Users</title>
+
+    <!-- Dashboard Sytle CSS -->
+    <link rel="stylesheet" href="../assets/css/db_style.css">
+    
+  </head>
+  <body class="cv_db_full_height">
+    
+    <div class="allWrapper cv_db_full_height">
+      
+      <aside class="cv_db_aside_area clearfix cv_db_full_height cv_db_scrollbar" id="aside_area">
+        
+        <div class="cv_db_logo mb-2">
+          <div class="logoWrapper">
+            <!-- <a href="/"><img src="" alt="Logo" /></a>  -->
+            <h1><a href="#">LOGO</a></h1>
+          </div><!-- end of logoWrapper -->
+        </div><!-- end of db_logo -->
+        
+        <div class="cv_db_sidebar_nav navbar navbar-vertical navbar-expand-xs fixed-left navbar-expand-md navbar-light bg-white clearfix" id="sidebar_nav">
+
+          <ul class="navbar-nav cv_db_sidebar_menu">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="fas fa-desktop"></i> Dashboard
+              </a>
+            </li><!-- end of li -->
+        
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-books" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-books">
+                <i class="fas fa-user-tie"></i>
+                <span class="nav-link-text"> Product </span>
+              </a>
+              <div id="navbar-books" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">All Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Add New Product</a>
+                  </li>                        
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Categories</a>
+                  </li>                        
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-agents" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-agents">
+                <i class="fas fa-user-secret"></i>
+                <span class="nav-link-text"> Order </span>
+              </a>
+              <div id="navbar-agents" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Approved Order</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Pending Order</a>
+                  </li>                       
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Unapproved Order</a>
+                  </li>                       
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-user" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-user">
+                <i class="fas fa-user-friends"></i>
+                <span class="nav-link-text"> Users </span>
+              </a>
+              <div id="navbar-user" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Users</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Manage Roles</a>
+                  </li>                       
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-settings" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-settings">
+                <i class="fas fa-user-cog"></i>
+                <span class="nav-link-text"> Settings </span>
+              </a>
+              <div id="navbar-settings" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">General</a>
+                  </li>  
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+
+          </ul><!-- end of navbar-nav -->
+        </div><!-- end of cv_db_sidebar_nav -->
+  
+      </aside><!-- end of cv_db_aside_area -->
+
+      <main class="cv_db_main_content clearfix cv_db_full_height cv_db_scrollbar" id="main_content">
+          
+        <header class="header cv_db_header" id="header">
+          <div class="container-fluid">
+              <div class="row justify-content-between">
+                <div class="col-sm-2">
+                  <button class="cv_db_aside_nav_toggle_btn"><i class="fas fa-align-right"></i></button>
+                </div><!-- end of col2 -->
+
+                <div class="col-sm-4">
+                  <ul class="navbar-nav cv_db_user_nav justify-content-end">
+                    <li>
+                      <div class="cv_db_ueser_card" id="user_card">
+                        <a href="#" class="cv_db_dropdown dropdown-toggle" id="cv_bd_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <div class="cv_db_user_info">
+                            <h3>Mamun Ahmed</h3>
+                            <p>Developer</p>
+                          </div><!-- end of cv_db_user_info -->
+                          <div class="cv_db_user_avater">
+                            <img src="../assets/images/Mamun.jpg" alt="User Avater">
+                          </div><!-- end of cv_db_user_avater -->
+                        </a>
+                        <div class="cv_bd_dropdown_menu cv_db_admin_nav dropdown-menu cv_db_slideIn" aria-labelledby="cv_bd_dropdown">
+                          <div class="cv_db_admin_nav_title"><h6>Welcome</h6></div>
+                          <a href="#" class="cv_db_dropdown_item dropdown-item"><i class="fas fa-user"></i> Profile</a>
+                          <a href="#" class="cv_db_dropdown_item dropdown-item"><i class="fas fa-user-cog"></i> Settings</a>
+                          <a href="#" class="cv_db_dropdown_item dropdown-item"><i class="fas fa-chart-line"></i> Activity</a>
+                          <a href="#" class="cv_db_dropdown_item dropdown-item"><i class="fas fa-headset"></i> Support</a>
+                          <a href="#" class="cv_db_dropdown_item dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                      </div><!-- end of cv_db_user_card -->
+                    </li><!-- end of li -->
+                  </ul><!-- end of cv_db_user_nav -->
+                </div><!-- end of col4 -->
+
+              </div><!-- end of row -->
+          </div><!-- end of container -->
+        </header><!-- end of header -->
+
+        <section class="cv_db_status_sec clearfix cv_db_sec_gap10 bgGray" id="status_sec">
+          <div class="container-fluid cv_db_full_height">
+            <div class="row">
+              <div class="col">
+                  <div class="cv_db_pageinfo">
+                    <h1 class="cv_db_pageinfo_title">Create Role</h1>
+                  </div><!-- end of cv_db_pageinfo -->
+              </div><!-- end of col -->
+            </div><!-- end of row -->
+          </div><!-- end of container-fluid -->
+        </section><!-- end of cv_db_status_sec -->
+
+        <section class="cv_db_setup_general clearfix mt-5" id="setup_general">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="cv_db_setup_card card shadow border-0">
+                  <div class="cv_db_card_header">
+                    <div class="row">
+                      <div class="col">
+                        <h3 class="mb-0">Role Management</h3>
+                      </div><!-- end of col -->
+
+                      <div class="col text-right">
+                          <a href="index.html" class="btn btn-sm btn-primary"><i class="fas fa-chevron-left"></i> Back to Role list</a>
+                      </div><!-- end of col -->
+                    </div><!-- end of row -->
+                  </div><!-- end of cv_db_card_header -->
+
+                  <div class="col">
+                    <form method="post" action="#" autocomplete="off">
+
+                      <div class="form-group">
+                        <label class="form-control-label mt-3" for="input-name">Name</label>
+                        <input type="text" name="name" id="input-name" class="form-control form-control-alternative" placeholder="Name" value="" required="" autofocus="">
+                      </div><!-- end of form-group -->
+
+                      <div class="form-group">
+                        <label class="form-control-label mb-2" for="input-role">Assign Role</label>
+
+                        <div class="card mb-2">
+                          <div class="cv_bd_card_header card-header p-1" id="heading-users">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link cv_db_btn_block text-left" type="button">Users</button>
+                            </h2>
+                          </div><!-- end of -->
+
+                          <div class="cv_db_card_body card-body">
+                            <div class="row">
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-1" name="permissions[]" type="checkbox" value="1">
+                                  <label for="input-permission-1" class="custom-control-label">Create</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-2" name="permissions[]" type="checkbox" value="2">
+                                  <label for="input-permission-2" class="custom-control-label">Store</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-3" name="permissions[]" type="checkbox" value="3">
+                                  <label for="input-permission-3" class="custom-control-label">Edit</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-4" name="permissions[]" type="checkbox" value="4">
+                                  <label for="input-permission-4" class="custom-control-label">Update</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-5" name="permissions[]" type="checkbox" value="5">
+                                  <label for="input-permission-5" class="custom-control-label">Delete</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-6" name="permissions[]" type="checkbox" value="6">
+                                  <label for="input-permission-6" class="custom-control-label">Index</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+                                
+                            </div><!-- end of row -->
+                          </div><!-- end of cv_db_card_body -->
+                        </div><!-- end of card -->
+
+                        <div class="card mb-2">
+                          <div class="cv_db_card_header card-header p-1" id="heading-userRoles">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link cv_db_btn_block text-left" type="button">UserRoles</button>
+                            </h2>
+                          </div><!-- end of cv_db_card_header -->
+
+                          <div class="cv_db_card_body card-body">
+                            <div class="row">
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-7" name="permissions[]" type="checkbox" value="7">
+                                  <label for="input-permission-7" class="custom-control-label">Create</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-8" name="permissions[]" type="checkbox" value="8">
+                                  <label for="input-permission-8" class="custom-control-label">Store</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-9" name="permissions[]" type="checkbox" value="9">
+                                  <label for="input-permission-9" class="custom-control-label">Edit</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-10" name="permissions[]" type="checkbox" value="10">
+                                  <label for="input-permission-10" class="custom-control-label">Update</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-11" name="permissions[]" type="checkbox" value="11">
+                                  <label for="input-permission-11" class="custom-control-label">Delete</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-12" name="permissions[]" type="checkbox" value="12">
+                                  <label for="input-permission-12" class="custom-control-label">Index</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+                                
+                            </div>
+                          </div><!-- end of cv_db_card_body -->
+                        </div><!-- end of card -->
+                
+                        <div class="card mb-2">
+                          <div class="cv_db_card_header card-header p-1" id="heading-owners">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link cv_db_btn_block text-left" type="button">Owners</button>
+                            </h2>
+                          </div><!-- end of -->
+
+                          <div class="cv_db_card_body card-body pl-lg-4">
+                            <div class="row">
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-13" name="permissions[]" type="checkbox" value="13">
+                                  <label for="input-permission-13" class="custom-control-label">Index</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-14" name="permissions[]" type="checkbox" value="14">
+                                  <label for="input-permission-14" class="custom-control-label">Show</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-15" name="permissions[]" type="checkbox" value="15">
+                                  <label for="input-permission-15" class="custom-control-label">Update</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-16" name="permissions[]" type="checkbox" value="16">
+                                  <label for="input-permission-16" class="custom-control-label">Edit</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-17" name="permissions[]" type="checkbox" value="17">
+                                  <label for="input-permission-17" class="custom-control-label">Destroy</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-18" name="permissions[]" type="checkbox" value="18">
+                                  <label for="input-permission-18" class="custom-control-label">Index.Approved</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-19" name="permissions[]" type="checkbox" value="19">
+                                  <label for="input-permission-19" class="custom-control-label">Index.Pending</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-20" name="permissions[]" type="checkbox" value="20">
+                                  <label for="input-permission-20" class="custom-control-label">Index.Unapproved</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-23" name="permissions[]" type="checkbox" value="23">
+                                  <label for="input-permission-23" class="custom-control-label">Action.MakePremium</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-24" name="permissions[]" type="checkbox" value="24">
+                                  <label for="input-permission-24" class="custom-control-label">Action.MakeNormal</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-25" name="permissions[]" type="checkbox" value="25">
+                                  <label for="input-permission-25" class="custom-control-label">Action.Block</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-26" name="permissions[]" type="checkbox" value="26">
+                                  <label for="input-permission-26" class="custom-control-label">Action.Unblock</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-27" name="permissions[]" type="checkbox" value="27">
+                                  <label for="input-permission-27" class="custom-control-label">Action.Approve</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-28" name="permissions[]" type="checkbox" value="28">
+                                  <label for="input-permission-28" class="custom-control-label">Action.Unapprove</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-29" name="permissions[]" type="checkbox" value="29">
+                                  <label for="input-permission-29" class="custom-control-label">Action.MakeAgent</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-30" name="permissions[]" type="checkbox" value="30">
+                                  <label for="input-permission-30" class="custom-control-label">Action.UpdateDocument</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-31" name="permissions[]" type="checkbox" value="31">
+                                  <label for="input-permission-31" class="custom-control-label">Action.RemoveDocument</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                            </div><!-- end of row -->
+                          </div><!-- end of cv_db_card_body -->
+                        </div><!-- end of card -->
+                
+                        <div class="card mb-2">
+                          <div class="cv_db_card_header card-header p-1" id="heading-coupons">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link cv_db_btn_block text-left" type="button">Coupons</button>
+                            </h2>
+                          </div><!-- end of cv_db_card_header -->
+
+                          <div class="cv_db_card_body card-body">
+                            <div class="row">
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-112" name="permissions[]" type="checkbox" value="112">
+                                  <label for="input-permission-112" class="custom-control-label">Index</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-113" name="permissions[]" type="checkbox" value="113">
+                                  <label for="input-permission-113" class="custom-control-label">Show</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-114" name="permissions[]" type="checkbox" value="114">
+                                  <label for="input-permission-114" class="custom-control-label">Create</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-115" name="permissions[]" type="checkbox" value="115">
+                                  <label for="input-permission-115" class="custom-control-label">Edit</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-116" name="permissions[]" type="checkbox" value="116">
+                                  <label for="input-permission-116" class="custom-control-label">Store</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-117" name="permissions[]" type="checkbox" value="117">
+                                  <label for="input-permission-117" class="custom-control-label">Update</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-118" name="permissions[]" type="checkbox" value="118">
+                                  <label for="input-permission-118" class="custom-control-label">Destroy</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+                                
+                            </div><!-- end of row -->
+                          </div><!-- end of cv_db_card_body -->
+                        </div><!-- end of card -->
+                
+                        <div class="card mb-2">
+                          <div class="cv_db_card_header card-header p-1" id="heading-payments">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link cv_db_btn_block text-left" type="button">Payments</button>
+                            </h2>
+                          </div><!-- end of cv_db_card_header -->
+
+                          <div class="cv_db_card_body card-body">
+                            <div class="row">
+                              
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-171" name="permissions[]" type="checkbox" value="171">
+                                  <label for="input-permission-171" class="custom-control-label">IndexDue</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-172" name="permissions[]" type="checkbox" value="172">
+                                  <label for="input-permission-172" class="custom-control-label">IndexApproved</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-173" name="permissions[]" type="checkbox" value="173">
+                                  <label for="input-permission-173" class="custom-control-label">IndexRejected</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-174" name="permissions[]" type="checkbox" value="174">
+                                  <label for="input-permission-174" class="custom-control-label">Show</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-175" name="permissions[]" type="checkbox" value="175">
+                                  <label for="input-permission-175" class="custom-control-label">Create</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-176" name="permissions[]" type="checkbox" value="176">
+                                  <label for="input-permission-176" class="custom-control-label">Edit</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-177" name="permissions[]" type="checkbox" value="177">
+                                  <label for="input-permission-177" class="custom-control-label">Store</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-178" name="permissions[]" type="checkbox" value="178">
+                                  <label for="input-permission-178" class="custom-control-label">Update</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-179" name="permissions[]" type="checkbox" value="179">
+                                  <label for="input-permission-179" class="custom-control-label">Destroy</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-180" name="permissions[]" type="checkbox" value="180">
+                                  <label for="input-permission-180" class="custom-control-label">Action.Approve</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-181" name="permissions[]" type="checkbox" value="181">
+                                  <label for="input-permission-181" class="custom-control-label">Action.Reject</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+                            </div><!-- end of row -->
+                          </div><!-- end of cv_db_card_body -->
+                        </div><!-- end of card -->
+
+                        <div class="card mb-2">
+                          <div class="cv_db_card_header card-header p-1" id="heading-notifications">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link cv_db_btn_block text-left" type="button">Notifications</button>
+                            </h2>
+                          </div><!-- end of cv_db_card_header -->
+
+                          <div class="cv_db_card_body card-body">
+                            <div class="row">
+                              
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-264" name="permissions[]" type="checkbox" value="264">
+                                  <label for="input-permission-264" class="custom-control-label">Index</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-265" name="permissions[]" type="checkbox" value="265">
+                                  <label for="input-permission-265" class="custom-control-label">Show</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-266" name="permissions[]" type="checkbox" value="266">
+                                  <label for="input-permission-266" class="custom-control-label">Create</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-267" name="permissions[]" type="checkbox" value="267">
+                                  <label for="input-permission-267" class="custom-control-label">Edit</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-268" name="permissions[]" type="checkbox" value="268">
+                                  <label for="input-permission-268" class="custom-control-label">Store</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-269" name="permissions[]" type="checkbox" value="269">
+                                  <label for="input-permission-269" class="custom-control-label">Update</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-270" name="permissions[]" type="checkbox" value="270">
+                                  <label for="input-permission-270" class="custom-control-label">Destroy</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+                                
+                            </div><!-- end of row -->
+                          </div><!-- end of cv_db_card_body -->
+                        </div><!-- end of card -->
+
+                        <div class="card mb-2">
+                          <div class="cv_db_card_header card-header p-1" id="heading-export">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link cv_db_btn_block text-left" type="button">Export</button>
+                            </h2>
+                          </div><!-- end of cv_db_card_header -->
+
+                          <div class="cv_db_card_body card-body">
+                            <div class="row">
+                              
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-291" name="permissions[]" type="checkbox" value="291">
+                                  <label for="input-permission-291" class="custom-control-label">Index</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-292" name="permissions[]" type="checkbox" value="292">
+                                  <label for="input-permission-292" class="custom-control-label">Numbers</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+                                
+                            </div><!-- end of row -->
+                          </div><!-- end of cv_db_card_body -->
+                        </div><!-- end of card -->
+
+                        <div class="card mb-2">
+                          <div class="cv_db_card_header card-header p-1" id="heading-general">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link cv_db_btn_block text-left" type="button">General</button>
+                            </h2>
+                          </div>
+
+                          <div class="cv_db_card_body card-body">
+                            <div class="row">
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-293" name="permissions[]" type="checkbox" value="293">
+                                  <label for="input-permission-293" class="custom-control-label">Index</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-294" name="permissions[]" type="checkbox" value="294">
+                                  <label for="input-permission-294" class="custom-control-label">Update</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+                                
+                            </div><!-- end of row -->
+                          </div><!-- end of cv_db_card_body -->
+                        </div><!-- end of card -->
+
+                        <div class="card mb-2">
+                          <div class="cv_db_card_header card-header p-1" id="heading-withdraws">
+                            <h2 class="mb-0">
+                              <button class="btn btn-link cv_db_btn_block text-left" type="button">Withdraws</button>
+                            </h2>
+                          </div><!-- end of cv_db_card_header -->
+
+                          <div class="cv_db_card_body card-body">
+                            <div class="row">
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-295" name="permissions[]" type="checkbox" value="295">
+                                  <label for="input-permission-295" class="custom-control-label">Index</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-296" name="permissions[]" type="checkbox" value="296">
+                                  <label for="input-permission-296" class="custom-control-label">Show</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-297" name="permissions[]" type="checkbox" value="297">
+                                  <label for="input-permission-297" class="custom-control-label">Edit</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-298" name="permissions[]" type="checkbox" value="298">
+                                  <label for="input-permission-298" class="custom-control-label">Action.Approve</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-299" name="permissions[]" type="checkbox" value="299">
+                                  <label for="input-permission-299" class="custom-control-label">Action.Reject</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-300" name="permissions[]" type="checkbox" value="300">
+                                  <label for="input-permission-300" class="custom-control-label">Action.Complete</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-301" name="permissions[]" type="checkbox" value="301">
+                                  <label for="input-permission-301" class="custom-control-label">Action.Reactive</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+                                
+                            </div><!-- end of row -->
+                          </div><!-- end of -->
+                        </div><!-- end of card cv_db_card_body -->
+                
+                        <div class="card mb-2">
+                          <div class="cv_db_card_header card-header p-1" id="heading-widgets">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link cv_db_btn_block text-left" type="button">Widgets</button>
+                            </h2>
+                          </div><!-- end of cv_db_card_header -->
+
+                          <div class="cv_db_card_body card-body">
+                            <div class="row">
+                              
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-302" name="permissions[]" type="checkbox" value="302">
+                                  <label for="input-permission-302" class="custom-control-label">Chart.Sales</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-303" name="permissions[]" type="checkbox" value="303">
+                                  <label for="input-permission-303" class="custom-control-label">Chart.Trips</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-304" name="permissions[]" type="checkbox" value="304">
+                                  <label for="input-permission-304" class="custom-control-label">Chart.Rider-registration</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-305" name="permissions[]" type="checkbox" value="305">
+                                  <label for="input-permission-305" class="custom-control-label">Trips-insight.Vehicle</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-306" name="permissions[]" type="checkbox" value="306">
+                                  <label for="input-permission-306" class="custom-control-label">Trips-insight.Area</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-307" name="permissions[]" type="checkbox" value="307">
+                                  <label for="input-permission-307" class="custom-control-label">Index</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-308" name="permissions[]" type="checkbox" value="308">
+                                  <label for="input-permission-308" class="custom-control-label">Summary.Incomes</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-309" name="permissions[]" type="checkbox" value="309">
+                                  <label for="input-permission-309" class="custom-control-label">Summary.Trips</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+
+                              <div class="col-md-6 col-lg-2">
+                                <div class="custom-control custom-checkbox mb-1">
+                                  <input class="custom-control-input" id="input-permission-310" name="permissions[]" type="checkbox" value="310">
+                                  <label for="input-permission-310" class="custom-control-label">Summary.Users</label>
+                                  <br>
+                                </div><!-- end of custom-control -->
+                              </div><!-- end of col6 -->
+                                
+                            </div><!-- end of row -->
+                          </div><!-- end of cv_db_card_body -->
+                        </div><!-- end of card -->
+                
+                      </div><!-- end of form-group -->
+                      
+                      <div class="text-left mb-4">
+                        <button type="submit" class="btn btn-primary mt-4">Add Role</button>
+                      </div><!-- end of text-left -->
+
+                    </form><!-- end of form -->
+                  </div><!-- end of col6 -->
+                </div><!-- end of card -->
+              </div><!-- end of col -->
+            </div><!-- end of row -->
+          </div><!-- end of container-fluid -->
+        </section><!-- end of cv_db_setup_general -->
+
+        <footer class="footer cv_db_footer cv_db_sec_gap clearfix" id="footer">
+          <div class="container-fluid">
+            <div class="row align-items-center justify-content-xl-between">
+              <div class="col-xl-6">
+                <div class="cv_db_copyright text-center text-xl-left text-muted">
+                  © 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">Logo</a>
+                </div><!-- end of copyright -->
+              </div><!-- end of col6 -->
+
+              <div class="col-xl-6">
+                <ul class="nav cv_db_footer_nav justify-content-center justify-content-xl-end">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" target="_blank">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" target="_blank">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" target="_blank">Partnership</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" target="_blank">Blog</a>
+                  </li>
+                </ul><!-- end of nav -->
+              </div><!-- end of col6 -->
+            </div><!-- end of row -->
+          </div><!--end of container-fluid -->
+        </footer><!-- end of footer -->
+
+      </main><!-- end of cv_db_main_content -->
+    </div><!-- end of allWrapper -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="../assets/js/skin.min.js"></script>
+    <script src="../assets/js/db_style.js"></script>
+  </body>
+</html>

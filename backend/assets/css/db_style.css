@@ -586,20 +586,6 @@ ul.cv_db_user_nav{
 }
 ul.cv_db_user_nav li{margin-right: 10px;}
 ul.cv_db_user_nav li:last-child{margin-right: 0px;}
-.navbar-vertical.navbar-expand-md .cv_db_collapse_nav a{
-	padding-top: .45rem;
-    padding-bottom: .45rem;
-    font-size: .8125rem;
-}
-.navbar-vertical.navbar-expand-xs .navbar-nav>.nav-item>.nav-link.active {
-	margin-right: .5rem;
-	margin-left: .5rem;
-	padding-right: 1rem;
-	padding-left: 1rem;
-	border-radius: .375rem;
-	background: #f6f9fc;
-}
-.navbar-vertical.navbar-expand-md .cv_db_collapse_nav .nav-link.active{color: #000000;}
 
 /*Admin Nav Style*/
 

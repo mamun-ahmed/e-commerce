@@ -2,8 +2,6 @@
     padding: 0;
 }
 .navbar-vertical.navbar-expand-xs .navbar-nav>.nav-item>.nav-link.active {
-    margin-right: .5rem;
-    margin-left: .5rem;
     padding-right: 1rem;
     padding-left: 1rem;
     border-radius: .375rem;
@@ -47,5 +45,6 @@
 }
 .navbar-vertical.navbar-expand-md .navbar-nav .nav .nav-link {
     padding-left: 2rem;
+    font-size: 0.9rem;
 }
 
