@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en" class="cv_db_full_height">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title CSS -->
+    <title>Coupon List</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fontawesome Sytle CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Dashboard Sytle CSS -->
+    <link rel="stylesheet" href="../assets/css/db_style.css">
+    
+  </head>
+  <body class="cv_db_full_height">
+    
+    <div class="allWrapper cv_db_full_height">
+      
+      <aside class="cv_db_aside_area clearfix cv_db_full_height cv_db_scrollbar" id="aside_area">
+        
+        <div class="cv_db_logo mb-2">
+          <a href="/"><img src="../assets/images/cropped-logo.png" alt="Logo" /></a> 
+        </div><!-- end of db_logo -->
+        
+        <div class="cv_db_sidebar_nav navbar navbar-vertical navbar-expand-xs fixed-left navbar-expand-md navbar-light bg-white clearfix" id="sidebar_nav">
+
+          <ul class="navbar-nav cv_db_sidebar_menu">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <i class="fas fa-desktop"></i> Dashboard
+              </a>
+            </li><!-- end of li -->
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-books" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-books">
+                <i class="fas fa-user-tie"></i>
+                <span class="nav-link-text"> Product </span>
+              </a>
+              <div id="navbar-books" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">All Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Add New Product</a>
+                  </li>                        
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Categories</a>
+                  </li>                        
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-agents" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-agents">
+                <i class="fas fa-user-secret"></i>
+                <span class="nav-link-text"> Order </span>
+              </a>
+              <div id="navbar-agents" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Approved Order</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Pending Order</a>
+                  </li>                       
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Unapproved Order</a>
+                  </li>                       
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-user" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-user">
+                <i class="fas fa-user-friends"></i>
+                <span class="nav-link-text"> Users </span>
+              </a>
+              <div id="navbar-user" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Users</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Manage Roles</a>
+                  </li>                       
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-owners" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-owners">
+                <i class="fas fa-user-tie"></i>
+                <span class="nav-link-text"> Owners </span>
+              </a>
+              <div id="navbar-owners" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Approved Owners</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Pending Approvals</a>
+                  </li>                       
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Unapproved Owners</a>
+                  </li>                       
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-agents" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-agents">
+                <i class="fas fa-user-secret"></i>
+                <span class="nav-link-text"> Agents </span>
+              </a>
+              <div id="navbar-agents" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Approved Agents</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Pending Approvals</a>
+                  </li>                       
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Unapproved Agents</a>
+                  </li>                       
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+            
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-drivers" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-drivers">
+                <i class="fas fa-truck"></i>
+                <span class="nav-link-text"> Drivers </span>
+              </a>
+              <div id="navbar-drivers" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Cars Drivers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Bike Drivers</a>
+                  </li>                       
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">All Active Drivers</a>
+                  </li>                       
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Inactive Drivers</a>
+                  </li>                       
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-riders" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-riders">
+                <i class="fas fa-biking"></i>
+                <span class="nav-link-text"> Riders </span>
+              </a>
+              <div id="navbar-riders" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Registered Riders</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Search (Rider)</a>
+                  </li>                       
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Device Information</a>
+                  </li>                      
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-vehicles" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-vehicles">
+                <i class="fas fa-car-side"></i>
+                <span class="nav-link-text"> Vehicles </span>
+              </a>
+              <div id="navbar-vehicles" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Approved Vehicles</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Pending Approvals</a>
+                  </li>                    
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-trips" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-trips">
+                <i class="fas fa-shapes"></i>
+                <span class="nav-link-text"> Trips </span>
+              </a>
+              <div id="navbar-trips" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Driver Trips</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Fare Query</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Auto Rejected</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Archived</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Booked</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Cancelled</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Accepted</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Rejected</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Started</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Ended</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Completed (Cars)</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Completed (Bikes)</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Fake</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Unhandled</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">All Booked</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Complaints</a>
+                  </li>                    
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-reservations" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-reservations">
+                <i class="fas fa-bowling-ball"></i>
+                <span class="nav-link-text"> Reservations </span>
+              </a>
+              <div id="navbar-reservations" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Created Trips</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Auto Rejected</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Booked</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Cancelled</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Accepted</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Rejected</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Started</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Ended</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Completed</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Archived</a>
+                  </li>                    
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Unhandled</a>
+                  </li>                  
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-fares" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-fares">
+                <i class="fab fa-cloudscale"></i>
+                <span class="nav-link-text"> Fares </span>
+              </a>
+              <div id="navbar-fares" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Fares</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Services</a>
+                  </li>              
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-payment" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-payment">
+                <i class="fas fa-money-bill"></i>
+                <span class="nav-link-text"> Payment </span>
+              </a>
+              <div id="navbar-payment" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Due Payments List</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Payments Approved</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Payments Rejected</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Withdraw Request</a>
+                  </li>              
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-settings" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-settings">
+                <i class="fas fa-user-cog"></i>
+                <span class="nav-link-text"> Settings </span>
+              </a>
+              <div id="navbar-settings" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">General</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Coupons</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Countries</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Cities</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">District</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Locations</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Vehicle Categories</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Vehicle Sub Categories</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Vehicle Brands</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Vehicle Models</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Vehicle Release Years</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Vehicle Code</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Driver Experience</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Payment Account Name</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Terms & Condition Type</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Terms & Condition Details</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Polygons</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Commission Charges</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Driver Online Bonus</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Dashboard Widgets</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Export</a>
+                  </li>              
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+
+            <li class="nav-item ">
+              <a class="nav-link " href="#navbar-analytics" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-analytics">
+                <i class="fas fa-chart-pie"></i>
+                <span class="nav-link-text"> Analytics </span>
+              </a>
+              <div id="navbar-analytics" class="collapse ">
+                <ul class="nav cv_db_collapse_nav flex-column">                              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Driver Location</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Rider Registration</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Trip Insight (Vehicle)</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Trip Insight (Area)</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Income Summary</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">Trip Summary</a>
+                  </li>              
+                  <li class="nav-item">
+                    <a href="#" class="nav-link ">User Summary</a>
+                  </li>            
+                </ul>
+              </div>            
+            </li><!-- end of li -->
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-bell"></i> Notifications
+              </a>
+            </li><!-- end of li -->
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fas fa-clone"></i>  Journal
+              </a>
+            </li><!-- end of li -->
+
+          </ul><!-- end of navbar-nav -->
+        </div><!-- end of cv_db_sidebar_nav -->
+  
+      </aside><!-- end of cv_db_aside_area -->
+
+      <main class="cv_db_main_content clearfix cv_db_full_height cv_db_scrollbar" id="main_content">
+          
+        <header class="header cv_db_header" id="header">
+          <div class="container-fluid">
+            <div class="row justify-content-between">
+              <div class="col-sm-2">
+                <button class="cv_db_aside_nav_toggle_btn"><i class="fas fa-align-right"></i></button>
+              </div><!-- end of col2 -->
+
+              <div class="col-sm-4">
+                <ul class="navbar-nav cv_db_user_nav justify-content-end">
+                  <li>
+                    <div class="cv_db_ueser_card" id="user_card">
+                      <a href="#" class="cv_db_dropdown dropdown-toggle" id="cv_bd_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="cv_db_user_info">
+                          <h3>Mamun Ahmed</h3>
+                          <p>Developer</p>
+                        </div><!-- end of cv_db_user_info -->
+                        <div class="cv_db_user_avater">
+                          <img src="../assets/images/Mamun.jpg" alt="User Avater">
+                        </div><!-- end of cv_db_user_avater -->
+                      </a>
+                      <div class="cv_bd_dropdown_menu cv_db_admin_nav dropdown-menu cv_db_slideIn" aria-labelledby="cv_bd_dropdown">
+                        <div class="cv_db_admin_nav_title"><h6>Welcome</h6></div>
+                        <a href="#" class="cv_db_dropdown_item dropdown-item"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#" class="cv_db_dropdown_item dropdown-item"><i class="fas fa-user-cog"></i> Settings</a>
+                        <a href="#" class="cv_db_dropdown_item dropdown-item"><i class="fas fa-chart-line"></i> Activity</a>
+                        <a href="#" class="cv_db_dropdown_item dropdown-item"><i class="fas fa-headset"></i> Support</a>
+                        <a href="#" class="cv_db_dropdown_item dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                      </div>
+                    </div><!-- end of cv_db_user_card -->
+                  </li><!-- end of li -->
+
+                </ul><!-- end of cv_db_user_nav -->
+              </div><!-- end of col4 -->
+
+            </div><!-- end of row -->
+          </div><!-- end of container -->
+        </header><!-- end of header -->
+
+        <section class="cv_db_status_sec clearfix cv_db_sec_gap10 cv_db_blackwi_bg_gradient" id="status_sec">
+          <div class="container-fluid cv_db_full_height">
+            <div class="row">
+              <div class="col">
+                <div class="cv_db_pageinfo">
+                  <h1 class="cv_db_pageinfo_title cv_db_text_white">Coupon List</h1>
+                </div><!-- end of cv_db_pageinfo -->
+              </div><!-- end of col -->
+            </div><!-- end of row -->
+          </div><!-- end of container-fluid -->
+        </section><!-- end of cv_db_status_sec -->
+
+        <section class="cv_db_setup_general clearfix mt-5" id="setup_general">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col">
+                <div class="cv_db_setup_card card shadow border-0">
+                  <div class="cv_db_card_header">
+                    <div class="row">
+                      <div class="col-sm-4 text-center">
+                          <div class="cv_db_filter">
+                            <form action="#" method="GET" class="form-inline">
+                              <label class="my-1 mr-2 control-label" for="filter-input">Filter
+                                <a href="#" onclick="javascript:return false;" class="ml-1 text-primary" data-toggle="popover" title="" data-placement="top" data-html="true" data-content="<p><small>Available columns-</small></p><p><pre>country_name</pre></p><p><small>You can search the result in following format- </small></p>
+                                  <p><pre>column_name:value1,value2</pre></p>
+                                  <p><small>You can specify multiple values for a column</small></p>
+                                  <p><small>You can enter any term without any column name then it will be searched in all the columns</small><p>" data-original-title="Filter Help"><i class="fa fa-question-circle"></i></a></label>
+                              <input style="width:68%" id="filter-input" class="form-control my-1 mr-sm-2" type="text" name="s" value="" placeholder="Type your search here...">
+                              <button type="submit" class="btn btn-lg btn-primary">Filter</button>
+                            </form>
+                          </div><!-- end of -->
+                      </div><!-- end of col -->
+
+                      <div class="col text-right">
+                          <a href="create.html" class="btn btn-sm btn-primary"><i class="fa fa-pencil-alt" aria-hidden="true"></i> Create Coupon</a>
+                      </div><!-- end of col -->
+                    </div><!-- end of row -->
+                  </div><!-- end of cv_db_card_header -->
+
+                  <div class="table-responsive" id="cv_db_table_area">
+                    <table class="table align-items-center table-flush">
+                      <thead class="thead-light">
+                        <tr>
+                          <th scope="col"><a href="#">SL. No</a> <i class="fa fa-sort"></i></th>
+                          <th scope="col"><a href="#">Coupon Name</a> <i class="fa fa-sort"></i></th>
+                          <th scope="col"><a href="#">Discount (%)</a> <i class="fa fa-sort"></i></th>
+                          <th scope="col"><a href="#">Up to</a> <i class="fa fa-sort"></i></th>
+                          <th scope="col"><a href="#">Valid Until</a> <i class="fa fa-sort"></i></th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead><!-- end of thead -->
+
+                      <tbody>
+                        <tr>
+                          <td>01</td>
+                          <td>Black Friday</td>
+                          <td>10%</td>
+                          <td>$30</td>
+                          <td>01.01.2020</td>
+                          <td class="text-right">
+                            <a class="btn btn-danger" href="../profile/index.html" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit profile">
+                              <span class="btn-inner--icon"><i class="far fa-trash-alt"></i></span>
+                              <span class="btn-inner--text">Remove</span>
+                            </a>
+                          </td>
+                        </tr><!-- end of tr -->
+
+                      </tbody><!-- end of tbody -->
+                    </table><!-- end of table -->
+                  </div><!-- end of cv_db_setup_card-->
+
+                </div><!-- end of card -->
+              </div><!-- end of col -->
+            </div><!-- end of row -->
+          </div><!-- end of container-fluid -->
+        </section><!-- end of cv_db_setup_general -->
+
+        <footer class="footer cv_db_footer cv_db_sec_gap clearfix" id="footer">
+          <div class="container-fluid">
+            <div class="row align-items-center justify-content-xl-between">
+              <div class="col-xl-6">
+                <div class="cv_db_copyright text-center text-xl-left text-muted">
+                  © 2019 <a href="#" class="font-weight-bold ml-1" target="_blank">GetIn</a>
+                </div><!-- end of copyright -->
+              </div><!-- end of col6 -->
+
+              <div class="col-xl-6">
+                <ul class="nav cv_db_footer_nav justify-content-center justify-content-xl-end">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" target="_blank">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" target="_blank">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" target="_blank">Partnership</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link" target="_blank">Blog</a>
+                  </li>
+                </ul><!-- end of nav -->
+              </div><!-- end of col6 -->
+            </div><!-- end of row -->
+          </div><!--end of container-fluid -->
+        </footer><!-- end of footer -->
+
+      </main><!-- end of cv_db_main_content -->
+    </div><!-- end of allWrapper -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../assets/js/db_style.js"></script>
+  </body>
+</html>
