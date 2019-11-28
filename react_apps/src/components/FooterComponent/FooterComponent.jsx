@@ -1,11 +1,12 @@
 import React from 'react';
 import {Container,Row,Col} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
-import {Lia ,Liai } from '../LiComponent/CommonLiComponent'
+import {Lia ,LiAi } from '../LiComponent/CommonLiComponent'
 
 import paypalIcon from '../../assets/images/paypal_icon_img.png';
 import masterCardIcon from '../../assets/images/master_card_icon_img.png';
 import visaIcon from '../../assets/images/visa_icon_img.png';
+import footer from "../../inc/footer/footer";
 
 function FooterComponent() {
     return(<>
@@ -26,18 +27,10 @@ function FooterComponent() {
               <div className="footerWidget">
                 <h4 className="footerWidgetHeader">Information</h4>
                 <ul className="footerLinksList">
-                    {["Order status",
-                    "How to place an order",
-                    "Return" ,
-                    "Terms & Conditions",
-                    "Delivery details",
-                    "Privacy Policy",
-                    "Blog",
-                    "Our support center"
-                    ].map((list,index)=><Lia
+                    {footer.map((list, index)=><Lia
                       key={index}
-                      Title={list}
-                      Url={'/'}
+                      Title={list.name}
+                      Url={list.url}
                     />)}
                 </ul>{/*  end of footerLinksList */}
               </div>{/*  end of footerWidget */}
@@ -48,7 +41,7 @@ function FooterComponent() {
                 <h4 className="footerWidgetHeader">Contact us</h4>
                 <ul className="getInTouchList">
                   <li>
-                    <Link to="mailto:you@example.com" title="click to mail us">noreplay@example.com</Link>
+                    <Link to="mailto:you@example.com" title="click to mail us">nobelPay@example.com</Link>
                   </li>{/*  end of li */}
                   <li>
                     <Link to="tele:1234567890" title="click to call us">+(123) 456 7890</Link>
@@ -67,11 +60,11 @@ function FooterComponent() {
                       {ListClass:"facebook", Url:"//facebook.com",IconName:"fab fa-facebook-f"},
                       {ListClass:"facebook" ,Url:"//instagram.com",IconName:"fab fa-instagram"},
                       {ListClass:"facebook",Url:"//twitter.com",IconName:"fab fa-twitter"},
-                    ].map((list,index)=><Liai
-                    Key={index}
-                    ListClass={list.ListClass}
-                    Url={list.IconName}
-                    IconName={list.IconName}
+                    ].map((list,index)=><LiAi
+                      key={index}
+                      ListClass={list.ListClass}
+                      Url={list.IconName}
+                      IconName={list.IconName}
                   />)}
                 </ul>{/*  end of footerSocial */}
               </div>{/*  end of footerWidget */}

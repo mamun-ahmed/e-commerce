@@ -6,10 +6,17 @@
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
+
+}
+.productSingleView img {
+    width: 327px;
+    height: 456px;
+    background-size: cover;
+}
+.Product-title-product-page{
+    width: 65%;
 }
 .productReviewStar{
     display: -webkit-box;
@@ -28,7 +35,7 @@
     color: #404041;
 }
 .authName a{text-decoration: underline!important;}
-.productsinglePrice{
+.product-single-Price{
     font-size: 30px;
     color: #363636;
 }
@@ -103,3 +110,17 @@
 .helpNavList .active .nav-link:hover{margin-left: 0px;}
 .helpNavList .nav-link:hover{color: #3897cf;margin-left: 5px;}
 .helpPara p{margin-bottom: 10px;font-weight: 400;}
+.slick-prev:before, .slick-next:before{color: #bfbfbf;font-size: 1.5rem;}
+/*.slick-next:before {*/
+/*    content: "\f061";*/
+/*    font-family: "Font Awesome 5 Free";*/
+/*}*/
+
+.productSingleView {position: relative;}
+.productSingleView .Modal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 15px;
+}
+.postReviewsForm textarea{width: 100%;}

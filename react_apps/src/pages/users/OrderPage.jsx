@@ -2,86 +2,15 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {Container, Row, Col, Card, Table} from 'react-bootstrap';
 import './assets/css/user.css';
-import {Liai,Liis, Lia} from '../../components/LiComponent/CommonLiComponent';
-import {headerPopbars,asideData,categoryClass,headerFeatureList} from '../../inc/users/users'
+import {LiAi, Lia} from '../../components/LiComponent/CommonLiComponent';
+import { asideData, categoryClass } from '../../inc/users/users';
+import {HeaderComponent, MobileHeader} from '../../components/header/Header';
 
 const OrderPage = () => {
   return (<>
     <div className="allWrapper">
-      <div className="headerTopBar clearfix bgBlack" id="headerTopBar">
-        <Container fluid={true}>
-          <Row className="justify-content-between">
-            <Col>
-              <div className="headFeature">
-                <i className="fas fa-map-marker-alt"></i> <span>Delivery region: Nairobi</span>
-              </div>{/* end of headFeature */}
-            </Col>{/* end of Col */}
-
-            <Col className="col-auto">
-              <div className="headFeature">
-                <ul className="headFeatureList d-flex justify-content-between">
-                {headerFeatureList.map(feature=><Liis
-                    ListClass={feature.LIST_CLASS}
-                    IconName={feature.ICON_NAME}
-                    Title={feature.TITLE}
-                />)}
-                </ul>{/* end of headFeatureList */}
-              </div>{/* end of headFeature */}
-            </Col>{/* end of Col */}
-
-          </Row>{/* end of Row */}
-        </Container>{/* end of Container */}
-      </div>{/* end of headerTopBar */}
-
-      <header className="header userHeader clearfix" id="header">
-        <Container fluid="{true}">
-          <Row>
-            <Col sm="2">
-              <div className="logoWrapper">
-                <h1 className="logoText"><Link to="#">LOGO</Link></h1>
-              </div>{/* end of logoWrapper */}
-
-            </Col>{/* end of Col */}
-
-            <Col>
-              <nav className="mainMenu mainNav" id="mainNav">
-                <ul className="navTabs">
-                  <Liai
-                   AnchorClass={"active"}
-                   Url={'/'}
-                   Title={"Home"}
-                  />
-                </ul>{/* end of navTabs */}
-
-              </nav>{/* end of Nav */}
-              <Link to="#" className="generalLink" id="responsiveMainNavToggler"><i className="fa fa-bars"></i></Link>
-              <div className="clearfix"></div>
-              <div className="responsiveMainNav"></div>{/* end of Nav */}
-            </Col>{/* end of Col */}
-
-            <Col className="col-auto">
-              <div className="headPopBar clearfix" id="headPopBar">
-                <ul className="headPopBarList d-flex justify-content-between align-items-center">
-                  {headerPopbars.map((datum)=><Liai
-                    key={Math.floor(Math.random() * 10)}
-                    IconName={datum.ICON_NAME}
-                    Title={datum.TITLE}
-                    Url={datum.URL}
-                    AnchorClass={datum.ANCHOR_CLASS}
-                  />)}
-                  <li>
-                    <div className="userLogged d-flex align-items-center">
-                      <div className="userAvater"><img src="./assets/images/reviews_avater.jpg" alt="" /></div>
-                      <span className="userName">Sam Smith</span>
-                    </div>{/* end of userLogged */}
-                  </li>{/* end of li */}
-                </ul>{/* end of headPopBarList */}
-              </div>{/* end of headPopBar */}
-            </Col>{/* end of Col */}
-          </Row>{/* end of Row */}
-        </Container>{/* end of Container */}
-      </header>{/* end of header */}
-
+      <HeaderComponent/>
+      <MobileHeader />
       <div className="userBodyArea clearfix" id="userBodyArea">
         <Container fluid="{true}" className="pl-0 pr-0">
           <Row noGutters>
@@ -89,7 +18,7 @@ const OrderPage = () => {
               <aside className="userAsideBar pt-3 clearfix shadow" id="userAsideBar">
                 <nav className="userNav">
                   <ul className="userNavBar">
-                    {asideData.map((aside)=><Liai
+                    {asideData.map((aside)=><LiAi
                       key={Math.floor(Math.random() * 10)}
                       ListClass={aside.LIST_CLASS}
                       Title={aside.TITLE}
@@ -115,10 +44,10 @@ const OrderPage = () => {
                               <div className="orderMedia">
                                 <img src="assets/images/order_page_icon_img.png" alt="" />
                               </div>{/* end of orderMedia */}
-                              
+
                               <div className="orderSortDes">
                                 <h2 className="headTitle mb-3">You don’t have any <span>Orders</span></h2>
-                                <p>It’s not a problem. Just choose a category you’re intrested in and<br/> add goods to your cart
+                                <p>It’s not a problem. Just choose a category you’re interested in and<br/> add goods to your cart
                                 </p>
                               </div>{/* end of orderSortDes */}
                              <hr className="hrBorder mt-4 mb-4" />
@@ -128,9 +57,9 @@ const OrderPage = () => {
                                   <Col sm="3">
                                     <h3 className="cardWidgetTitle mb-3">Kindergarten</h3>
                                     <ul className="cardWidgetList text-center">
-                                    {categoryClass.primarySchool.map(priClass=><Lia
+                                    {categoryClass.kindergartenSchool.map(priClass=><Lia
                                        key={Math.floor(Math.random() * 10)}
-                                       Title={priClass} 
+                                       Title={priClass}
                                        Url={'/'}
                                      />)}
                                     </ul>{/* end of cardWidgetList */}
@@ -141,7 +70,7 @@ const OrderPage = () => {
                                     <ul className="cardWidgetList cardWidgetList2 text-center">
                                      {categoryClass.primarySchool.map(priClass=><Lia
                                        key={Math.floor(Math.random() * 10)}
-                                       Title={priClass} 
+                                       Title={priClass}
                                        Url={'/'}
                                      />)}
                                     </ul>{/* end of cardWidgetList */}
@@ -150,9 +79,9 @@ const OrderPage = () => {
                                   <Col sm="3">
                                     <h3 className="cardWidgetTitle mb-3">Secondary school</h3>
                                     <ul className="cardWidgetList text-center">
-                                    {categoryClass.primarySchool.map(priClass=><Lia
+                                    {categoryClass.secondarySchool.map(priClass=><Lia
                                        key={Math.floor(Math.random() * 10)}
-                                       Title={priClass} 
+                                       Title={priClass}
                                        Url={'/'}
                                      />)}
                                     </ul>{/* end of cardWidgetList */}
@@ -161,9 +90,9 @@ const OrderPage = () => {
                                   <Col sm="3">
                                     <h3 className="cardWidgetTitle mb-3">Stationery</h3>
                                     <ul className="cardWidgetList text-center">
-                                     {categoryClass.primarySchool.map(priClass=><Lia
+                                     {categoryClass.stationery.map(priClass=><Lia
                                        key={Math.floor(Math.random() * 10)}
-                                       Title={priClass} 
+                                       Title={priClass}
                                        Url={'/'}
                                      />)}
                                     </ul>{/* end of cardWidgetList */}
@@ -173,7 +102,7 @@ const OrderPage = () => {
 
                             </div>{/* end of orderHeadDetails */}
                           </Card.Body>{/* end of Card.Body */}
-                          
+
                           <Card.Body className="pt-5">
 
                             <Table responsive className="cardTable">
@@ -190,7 +119,7 @@ const OrderPage = () => {
 
                               <tbody>
                                 <tr>
-                                  <td><Link to="#">Lorem ipsum dolor sit amet irure dolor</Link></td>
+                                  <td><Link to="#">Lorem ipsum dolor sit ament inure dolor</Link></td>
                                   <td>$16.00</td>
                                   <td>1</td>
                                   <td>$16.00</td>
@@ -198,7 +127,7 @@ const OrderPage = () => {
                                   <td><span className="stockInfo">In stock</span></td>
                                 </tr>{/* end of tr */}
                                 <tr>
-                                  <td><Link to="#">Lorem ipsum dolor sit amet irure dolor</Link></td>
+                                  <td><Link to="#">Lorem ipsum dolor sit ament inure dolor</Link></td>
                                   <td>$16.00</td>
                                   <td>1</td>
                                   <td>$16.00</td>

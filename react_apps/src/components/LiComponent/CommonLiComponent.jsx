@@ -2,18 +2,19 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
+
 // only list component
-function Li({Listclass,Title}) {
+function Li({ListClass,Title}) {
    return(
-    <li className={Listclass}>{Title}</li>
+    <li className={ListClass}>{Title}</li>
    )
 }
 
 //list anchor tag
 
-function Lia({Listclass,Title,Url}) {
+function Lia({ListClass,Title,Url}) {
    return(
-    <li className={Listclass}>
+    <li className={ListClass}>
       <Link to={Url}>{Title}</Link>
     </li>
    )
@@ -21,18 +22,17 @@ function Lia({Listclass,Title,Url}) {
 
 
 /// list icon span
-function Liis({Listclass,Title,IconName}){
+function LiIs({ListClass,Title,IconName}){
  return(
-     <li className={Listclass}>
-         <i className={IconName}>
-           <span>{Title}</span>
-          </i>
+     <li className={ListClass}>
+         <i className={IconName}></i>
+          <span>{Title}</span>
      </li>
  )
 }
 
 //list anchor icon
-function Liai({ListClass,Title,Url,IconName,AnchorClass}){
+function LiAi({ListClass,Title,Url,IconName,AnchorClass}){
   return (
     <li className={ListClass}>
         <Link className={AnchorClass} to={Url}><i className={IconName}></i>{Title}</Link>
@@ -51,13 +51,26 @@ function Liai({ListClass,Title,Url,IconName,AnchorClass}){
           </li>
       </>
   )
+
 }
 
+//List Icon
+function LiSpan({itemName, Url, Value }) {
+    return (
+        <>
+            <li>
+                <Link to={Url}>{itemName}<span>{Value}</span></Link>
+            </li>
+        </>
+    )
+
+}
 
 export {
     Li,
     Lia,
     Lii,
-    Liis,
-    Liai
+    LiIs,
+    LiAi,
+    LiSpan
 } ;
